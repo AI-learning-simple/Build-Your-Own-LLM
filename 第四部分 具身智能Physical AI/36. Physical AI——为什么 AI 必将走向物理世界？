@@ -1,0 +1,739 @@
+# 第四部分 Physical AI——从数字智能到物理智能
+
+# 第43章 Physical AI——为什么 AI 必将走向物理世界？
+
+---
+
+## 本章目标
+
+完成本章学习后，你将理解：
+
+- 什么是 Physical AI（物理智能）
+- 什么是 Embodied AI（具身智能）
+- 为什么 Agent 的下一站是机器人
+- 数字世界与物理世界的根本区别
+- Physical AI 的完整技术栈
+- 为什么大模型正在成为机器人"大脑"
+- 本部分整体学习路线
+
+---
+
+# 43.1 AI 正在离开屏幕
+
+过去几年。
+
+AI 的主要工作对象。
+
+始终是：
+
+数字世界。
+
+例如：
+
+聊天。
+
+搜索。
+
+翻译。
+
+写代码。
+
+生成图片。
+
+浏览网页。
+
+这些能力。
+
+全部发生在：
+
+计算机内部。
+
+Agent。
+
+能够：
+
+打开浏览器。
+
+操作 IDE。
+
+控制 Office。
+
+完成各种数字任务。
+
+但是。
+
+新的问题开始出现。
+
+如果：
+
+AI 能够完成：
+
+数字世界。
+
+的大部分工作。
+
+它是否能够：
+
+进入真实世界？
+
+答案。
+
+越来越明确。
+
+**可以。**
+
+于是。
+
+AI 开始离开屏幕。
+
+进入：
+
+真实世界。
+
+---
+
+# 43.2 什么是 Physical AI？
+
+Physical AI。
+
+可以理解为：
+
+能够感知。
+
+理解。
+
+并作用于：
+
+真实物理世界。
+
+的人工智能。
+
+相比：
+
+传统 AI。
+
+Physical AI。
+
+增加了：
+
+一个新的闭环。
+
+```text
+Environment
+
+↓
+
+Perception
+
+↓
+
+Reasoning
+
+↓
+
+Action
+
+↓
+
+Environment
+```
+
+AI。
+
+第一次拥有：
+
+真正影响现实世界。
+
+的能力。
+
+---
+
+# 43.3 什么是 Embodied AI？
+
+Embodied AI。
+
+通常译为：
+
+具身智能。
+
+它强调：
+
+AI。
+
+不仅拥有：
+
+智能。
+
+还拥有：
+
+身体（Embodiment）。
+
+例如：
+
+机器人。
+
+机械臂。
+
+无人机。
+
+自动驾驶汽车。
+
+智能设备。
+
+这些载体。
+
+共同组成：
+
+AI 的身体。
+
+因此。
+
+Embodied AI。
+
+是：
+
+Physical AI。
+
+最重要。
+
+也是目前最成熟。
+
+的发展方向。
+
+---
+
+# 43.4 从 Digital Agent 到 Physical Agent
+
+第三部分。
+
+我们学习了：
+
+Agent。
+
+它能够：
+
+搜索网页。
+
+调用工具。
+
+操作浏览器。
+
+管理任务。
+
+但是。
+
+这些能力。
+
+仍然局限于：
+
+数字空间。
+
+Physical AI。
+
+进一步扩展了：
+
+Agent。
+
+的工作范围。
+
+```text
+Digital Agent
+
+↓
+
+Browser
+
+↓
+
+Computer
+
+↓
+
+Robot
+
+↓
+
+Physical Agent
+```
+
+Agent。
+
+开始真正：
+
+与现实世界。
+
+进行交互。
+
+---
+
+# 43.5 为什么 LLM 能成为机器人大脑？
+
+过去。
+
+机器人。
+
+通常采用：
+
+规则控制。
+
+有限状态机。
+
+传统控制器。
+
+只能完成：
+
+预定义任务。
+
+而大模型。
+
+拥有：
+
+语言理解。
+
+知识推理。
+
+任务规划。
+
+工具调用。
+
+泛化能力。
+
+因此。
+
+越来越多研究。
+
+开始采用：
+
+大模型。
+
+作为：
+
+机器人。
+
+的大脑。
+
+机器人。
+
+第一次具备：
+
+理解复杂任务。
+
+自主规划。
+
+跨任务泛化。
+
+持续学习。
+
+等能力。
+
+---
+
+# 43.6 Physical AI 的技术栈
+
+一个完整的 Physical AI 系统。
+
+通常包括：
+
+```text
+Instruction
+
+↓
+
+Vision
+
+↓
+
+World Understanding
+
+↓
+
+Planning
+
+↓
+
+Action Generation
+
+↓
+
+Controller
+
+↓
+
+Robot
+
+↓
+
+Environment
+```
+
+其中。
+
+每一层。
+
+都对应着：
+
+新的研究方向。
+
+例如：
+
+Vision。
+
+负责：
+
+感知世界。
+
+Planning。
+
+负责：
+
+任务规划。
+
+Action Generation。
+
+负责：
+
+动作生成。
+
+Controller。
+
+负责：
+
+控制机器人。
+
+后续章节。
+
+将逐一展开。
+
+---
+
+# 43.7 Physical AI 的模型演进
+
+近年来。
+
+机器人模型。
+
+经历了几个阶段。
+
+第一阶段。
+
+传统机器人。
+
+```text
+Camera
+
+↓
+
+CV
+
+↓
+
+Controller
+```
+
+第二阶段。
+
+多模态机器人。
+
+```text
+Vision
+
+↓
+
+Language
+
+↓
+
+Planner
+
+↓
+
+Controller
+```
+
+第三阶段。
+
+Foundation Model。
+
+```text
+Image
+
+↓
+
+Transformer
+
+↓
+
+Action
+```
+
+第四阶段。
+
+Physical Foundation Model。
+
+```text
+Vision
+
+Language
+
+Memory
+
+World Model
+
+↓
+
+Action
+
+↓
+
+Robot
+```
+
+模型。
+
+不断走向：
+
+统一。
+
+---
+
+# 43.8 为什么 Physical AI 很难？
+
+数字世界。
+
+具有：
+
+确定性。
+
+复制成本低。
+
+错误容易恢复。
+
+而物理世界。
+
+完全不同。
+
+例如：
+
+机器人。
+
+必须面对：
+
+遮挡。
+
+摩擦。
+
+碰撞。
+
+重力。
+
+延迟。
+
+噪声。
+
+甚至：
+
+硬件损坏。
+
+因此。
+
+Physical AI。
+
+不仅需要：
+
+智能。
+
+更需要：
+
+可靠性。
+
+鲁棒性。
+
+实时性。
+
+---
+
+# 43.9 Physical AI 的产业方向
+
+目前。
+
+Physical AI。
+
+已经广泛应用于：
+
+- 人形机器人
+- 工业机器人
+- 服务机器人
+- 自动驾驶
+- 无人机
+- 智能制造
+- 仓储物流
+- 医疗机器人
+- 家庭机器人
+
+未来。
+
+越来越多 Agent。
+
+将拥有：
+
+自己的身体。
+
+---
+
+# 43.10 本部分学习路线
+
+本部分。
+
+将按照：
+
+从模型。
+
+到系统。
+
+再到工程实践。
+
+的路线展开。
+
+学习路线如下：
+
+```text
+Physical AI
+
+↓
+
+Foundation Model
+
+↓
+
+Action Generation
+
+↓
+
+Robot Embodiment
+
+↓
+
+Simulation
+
+↓
+
+Engineering Practice
+
+↓
+
+Future AI
+```
+
+通过这一部分。
+
+读者将建立：
+
+完整的具身智能知识体系。
+
+并能够进一步开展：
+
+机器人开发。
+
+模型训练。
+
+以及工程实践。
+
+---
+
+# 工程工具箱
+
+建议提前了解以下工具：
+
+模型：
+
+- OpenVLA
+- π0
+- ACT
+- Diffusion Policy
+
+机器人：
+
+- LeRobot
+- SO-101
+- OpenManipulator
+
+仿真：
+
+- Isaac Sim
+- MuJoCo
+- Genesis
+- Habitat
+- Gazebo
+
+开发框架：
+
+- ROS 2
+- MoveIt 2
+
+这些工具将在后续章节陆续介绍。
+
+---
+
+# 本章总结
+
+本章，我们理解了：
+
+✅ Physical AI 是 AI 从数字世界迈向物理世界的重要方向
+
+✅ Embodied AI 是当前最主要的 Physical AI 研究路线
+
+✅ 大模型正在逐渐成为机器人的"大脑"
+
+✅ Physical AI 需要同时解决感知、理解、规划、动作生成与控制等问题
+
+✅ 本部分将围绕模型、机器人、仿真和工程实践展开
+
+一句话总结：
+
+> **如果 Agent 让 AI 学会了完成数字任务，那么 Physical AI 将让 AI 真正进入现实世界。**
+
+---
+
+# 下一章预告
+
+理解了：
+
+Physical AI。
+
+新的问题来了。
+
+机器人。
+
+到底使用什么样的大模型？
+
+为什么：
+
+有些模型。
+
+采用：
+
+Vision → Language → Controller。
+
+有些模型。
+
+却直接：
+
+Image → Action？
+
+还有：
+
+越来越流行的：
+
+World Model。
+
+Diffusion Policy。
+
+Hybrid Model。
+
+又分别代表什么？
+
+下一章。
+
+我们将进入：
+
+> **第44章 Embodied Foundation Models——具身智能模型体系。**
