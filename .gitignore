@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+**/.DS_Store
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# AI 编程助手本地状态（每台机器不同，不需要纳入版本控制）
+.codebuddy/
+
+# 常见临时/备份文件
+*.tmp
+*.bak
