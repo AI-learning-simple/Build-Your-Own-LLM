@@ -62,7 +62,9 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 11 | Stacking Transformer | 为什么层数越多越聪明、浅层 vs 深层分别学什么 |
 | 12 | Transformer 家族 | Encoder-Only / Decoder-Only / Encoder-Decoder 三种架构对比 |
 | 13 | 大语言模型（LLM） | Scaling Law、涌现能力、In-Context Learning、CoT、LoRA/DPO 微调实战、量化与 KV Cache |
-| 14 | 第一部分总结 | 知识地图回顾 |
+| 14 | 多模态大模型——LLM 如何“看懂”图像 | Patch Embedding、Vision Encoder（CLIP 对比学习）、Projector、图文对齐实战 |
+| 15 | 多模态大模型进阶——统一理解与生成 | VQ-VAE 图像离散化、Diffusion 基础、Any-to-Any 统一模型、手写最小 VQ-VAE 实战 |
+| 16 | 第一部分总结 | 知识地图回顾 |
 
 ---
 
