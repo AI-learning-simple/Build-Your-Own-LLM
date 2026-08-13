@@ -9,6 +9,47 @@ Sebastian Raschka 从零构建大模型 https://github.com/rasbt/LLMs-from-scrat
 李沐 实用机器学习 https://space.bilibili.com/1567748478
 李宏毅 机器学习 https://space.bilibili.com/3546866876680925
 
+## 多模态模型
+https://www.tgltommy.com/p/multimodal-season-1
+https://mit-mi.github.io/mmai-course/spring2026/#:~:text=This%20course%20introduces%20the%20principles%20of%20multimodal%20AI%20that%20can%20process%20many%20modalities%20at%20once,%20such%20as%20connecting%20language%20and%20images,%20music%20and%20art,%20sensing%20and%20actuation
+https://www.coursera.org/professional-certificates/multimodal-intelligence-vision-audio-and-language-in-action
+https://www.bilibili.com/video/BV1aUSjBtEQu/?vd_source=0c84372c41df191c85e27a77e1684ee2
+https://github.com/karpathy/LLM101n
+
+# Agent参考资料
+微软 AI Agents for Beginners https://github.com/microsoft/ai-agents-for-beginners
+Datawhale Agentic AI 教程 https://github.com/datawhalechina/agentic-ai
+迪迪粒粒 AI Agents 从零到一 https://github.com/didilili/ai-agents-from-zero
+慕课网 小浪助手:基于 LangChain 的单 Agent 开发实践 https://coding.imooc.com/class/822.html
+极客时间 AI Agent 实战课 https://time.geekbang.org/course/intro/101048201
+
+## Alignment 与训练工程(第二部分)
+OpenAI InstructGPT 论文(RLHF 流水线: SFT→RM→PPO) https://arxiv.org/abs/2203.02155
+Anthropic《Training a Helpful and Harmless Assistant with RLHF》 https://arxiv.org/abs/2204.05862
+HuggingFace Alignment Handbook(SFT/DPO/RLHF 全流程训练代码) https://github.com/huggingface/alignment-handbook
+DPO 论文(Direct Preference Optimization) https://arxiv.org/abs/2305.18290
+Karpathy《State of GPT》(预训练→SFT→RLHF→推理全链路) https://www.youtube.com/watch?v=bZQun8Y4L2A
+李宏毅《ChatGPT 原理》讲座(B站) https://www.bilibili.com/video/BV1Ns4y1p7hW
+DeepSeek-R1 论文(RLVR 推理对齐) https://arxiv.org/abs/2501.12948
+OpenAI o1 推理模型技术博客 https://openai.com/index/learning-to-reason-with-llms/
+Meta Llama Guard 论文 https://arxiv.org/abs/2312.06674
+OWASP LLM Top 10(应用层安全清单) https://owasp.org/www-project-top-10-for-large-language-model-applications/
+Triton 官方教程 https://triton-lang.org/
+FlashAttention 论文 https://arxiv.org/abs/2205.14135
+GPU Mode(GPU 编程社区课程) https://gpu-mode.github.io/
+Horace He《Making Deep Learning Go Brrr》 https://horace.io/brrr_intro.html
+DeepSpeed 官方文档(ZeRO) https://www.deepspeed.ai/
+Megatron-LM(NVIDIA 大规模训练) https://github.com/NVIDIA/Megatron-LM
+李沐 大语言模型系列(B站) https://space.bilibili.com/1567748478
+vLLM(PagedAttention 推理引擎) https://github.com/vllm-project/vllm
+TensorRT-LLM(NVIDIA 推理优化) https://github.com/NVIDIA/TensorRT-LLM
+LMDeploy / SGLang(国产推理框架) https://github.com/InternLM/lmdeploy
+Chip Huyen《AI Engineering》(推理/训练工程) https://github.com/chiphuyen/ai-engineer-book
+EleutherAI lm-evaluation-harness(评测工具) https://github.com/EleutherAI/lm-evaluation-harness
+上海 AI Lab OpenCompass(中文模型评测) https://github.com/open-compass/opencompass
+LMSYS Chatbot Arena(Elo 人类偏好评测) https://chat.lmsys.org/
+斯坦福 HELM(大模型全面评测) https://crfm.stanford.edu/helm/
+
 ## 具身智能
 陈天行 具身智能教程 https://github.com/TianxingChen/Embodied-AI-Guide
 Together_CZ 具身智能从零到精通：完整学习路线与实战指南 https://blog.csdn.net/Together_CZ/article/details/162139760
