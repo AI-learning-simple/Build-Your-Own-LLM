@@ -89,14 +89,14 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 ### 3. Agent（Use）
 
-> 让 LLM 从"会说"变成"会做"：Tool Calling、Planning、Memory、Multi-Agent、协议家族（MCP/A2A/AG-UI）、Skill、Agent Runtime 到 Agentic OS。
+> 让 LLM 从"会说"变成"会做"：Tool Calling、RAG、Planning、Memory、Multi-Agent、协议家族（MCP/A2A/AG-UI）、Skill、Agent Runtime 到 Agentic OS，最后以一个求职作品级的综合实战收尾。
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
 | 1 | Agent——为什么大模型开始行动 | Thought → Action → Observation 循环、ReAct Agent 手写实现 |
 | 2 | Tool Calling——Agent 如何连接真实世界 | 手写 JSON 解析 → 模型原生 Tool Calling → 约束解码（Constrained Decoding） |
 | 3 | Planning——Agent 如何制定行动计划 | 任务分解、Plan-and-Execute、LangGraph 复现 |
-| 4 | Memory——Agent 如何拥有长期记忆 | 向量记忆、RAG、LangChain Memory |
+| 4 | Memory 与 RAG——Agent 如何记住并检索知识 | 向量记忆、RAG 完整流程（分块/向量化/检索/增强）、最小 RAG 实战、三大 RAG 框架 |
 | 5 | Reflection——Agent 如何不断自我修正 | Self-Reflection 循环、让 Agent 自我批评并修正 |
 | 6 | Agent Loop——Agent 如何形成自主执行闭环 | 完整 Agent Loop 手写 + LangGraph 复现 |
 | 7 | Multi-Agent——多个 Agent 如何协同完成复杂任务 | 多 Agent 协作、CrewAI 实战 |
@@ -107,6 +107,7 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 12 | Execution Environment——Agent 如何操作数字世界 | 安全代码沙箱、浏览器自动化 |
 | 13 | Agentic Runtime——为什么 Agent 正在拥有自己的运行平台 | Agent 调度器、进程管理视角 |
 | 14 | Agentic OS——为什么 Agent 将重新定义操作系统 | Capability Registry、事件驱动架构 |
+| 15 | 综合实战——从零构建一个能写进简历的文档问答 Agent | RAG + LLM + FastAPI 三层架构、求职作品、抑制幻觉 |
 
 ---
 
@@ -142,9 +143,9 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 ## 开始阅读
 
-建议从 `0. 开始之前/0. Prelude.md` 开始，了解全书的整体框架和学习路线，然后按顺序进入第一部分。
+建议从 `0. 开始之前/1. 前沿.md` 开始，了解全书的整体框架、学习路线和硬件门槛，然后按顺序进入第一部分。
 
-如果你在国内，记得先看一下 Prelude 中的「P0.6 环境准备」章节，配置好 Hugging Face 镜像和 pip 镜像，后续所有实验的下载速度会快很多。
+如果你在国内，记得先看一下前沿中的「P0.4 环境安装」和「P0.5 模型与网络」章节，配置好 Hugging Face 镜像和 pip 镜像，后续所有实验的下载速度会快很多。
 
 ---
 
