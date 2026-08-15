@@ -54,7 +54,7 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 3 | Embedding——大模型如何理解 Token | One-Hot、Embedding Matrix、语义空间的几何直觉 |
 | 4 | 神经网络——从神经元到 MLP | 线性层、激活函数、前向传播 |
 | 5 | Context Matters（上下文） | 固定窗口拼接、上下文为什么决定词义 |
-| 6 | 从 N-Gram 到 Neural Language Model | N-Gram 数据稀疏性、Neural LM 的核心思想、从 Cross Entropy 到 Perplexity、Gradient Descent → Adam/AdamW、权重初始化 |
+| 6 | 从 N-Gram 到 Neural Language Model | N-Gram 数据稀疏性、Neural LM 核心思想、Cross Entropy → Perplexity、反向传播（手算 + micrograd）、Gradient Descent → Adam/AdamW、权重初始化、**6.11 阶段性成果：亲手训练 Embedding 模型（共现矩阵 + PPMI + SVD，king - man + woman ≈ queen）** |
 | 7 | RNN——让模型拥有真正的记忆 | Hidden State、RNN Cell、LSTM（三个门）、RNN 的遗忘问题 |
 | 8 | Attention | Dot Product、Softmax、Weighted Sum、Q/K/V、Multi-Head Attention、注意力矩阵可视化 |
 | 9 | Transformer Block | Layer Norm、残差连接、FFN、完整 Block 组装 |
