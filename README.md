@@ -21,12 +21,13 @@ flowchart LR
 
 | 项目 | 说明 |
 |---|---|
-| **第一部分（LLM基础）** | 纯 CPU 笔记本即可运行，模型只有几百万参数，几分钟内跑完 |
-| **第二、三部分** | 消费级 8GB 显存单卡（RTX 3060/4060），CPU 也能跑但较慢 |
+| **第一部分第 1～12 章** | 以 NumPy 和小型 PyTorch 模型为主，普通 CPU 笔记本可运行；具体耗时取决于硬件与实验配置 |
+| **第一部分第 13 章及后续训练实验** | 部分实验需要下载 0.5B～7B 开源模型，并可能依赖 CUDA GPU；以各章环境说明为准 |
+| **第二、三部分** | 部分训练实验建议使用消费级 GPU；CPU 能否运行及耗时以各章说明为准 |
 | **模型来源** | 全部使用开源模型（Qwen 系列），在本地运行，不需要注册任何境外付费 API |
 | **国内网络** | 提供 Hugging Face 镜像（`hf-mirror.com`）和 ModelScope 备选方案；pip 清华源加速；推荐按小时计费的国内云 GPU（AutoDL 等），支持支付宝/微信，几元钱即可体验完一节实验 |
 
-> 详见《开始之前》一章的「P0.6 环境准备：国内网络访问与硬件门槛」。
+> 详见 `0. 开始之前/1. 前言.md` 中的「P0.3 硬件准备」「P0.4 环境安装」与「P0.5 模型与网络」。
 
 ---
 
@@ -54,7 +55,7 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 3 | Embedding——大模型如何理解 Token | One-Hot、Embedding Matrix、语义空间的几何直觉 |
 | 4 | 神经网络——从神经元到 MLP | 线性层、激活函数、前向传播理论；**4.1 实践：用 NumPy 实现两层 MLP 并计算 Loss** |
 | 5 | Context Matters（上下文） | Context Window、N-Gram 理论；**5.1 构建 N-Gram 数据集、5.2 实现 N-Gram 语言模型** |
-| 6 | 从 N-Gram 到 Neural Language Model | N-Gram 数据稀疏性、Neural LM 核心思想；6.1~6.8 完成数据准备、前向、Loss、反向传播、梯度下降与现代优化器；**6.9 阶段性成果：亲手训练 Embedding 模型（共现矩阵 + PPMI + SVD，king - man + woman ≈ queen）** |
+| 6 | 从 N-Gram 到 Neural Language Model | N-Gram 数据稀疏性、Neural LM 核心思想；6.1～6.7 完成前向、Loss、反向传播、梯度下降与现代优化器，6.8 完成首次端到端训练；**6.9 在 WikiText-2 英文语料上从随机初始化训练 Embedding Language Model** |
 | 7 | RNN——让模型拥有真正的记忆 | Hidden State、RNN Cell、LSTM（三个门）、RNN 的遗忘问题 |
 | 8 | Attention | Dot Product、Softmax、Weighted Sum、Q/K/V、Multi-Head Attention、注意力矩阵可视化 |
 | 9 | Transformer Block | Layer Norm、残差连接、FFN、完整 Block 组装 |
@@ -143,9 +144,9 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 ## 开始阅读
 
-建议从 `0. 开始之前/1. 前沿.md` 开始，了解全书的整体框架、学习路线和硬件门槛，然后按顺序进入第一部分。
+建议从 `0. 开始之前/1. 前言.md` 开始，了解全书的整体框架、学习路线和硬件门槛，然后按顺序进入第一部分。
 
-如果你在国内，记得先看一下前沿中的「P0.4 环境安装」和「P0.5 模型与网络」章节，配置好 Hugging Face 镜像和 pip 镜像，后续所有实验的下载速度会快很多。
+如果你在国内，先阅读前言中的「P0.4 环境安装」和「P0.5 模型与网络」，配置 Hugging Face 镜像和 pip 镜像。
 
 ---
 
