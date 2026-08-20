@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 生成一张 3D 损失曲面 + 梯度方向示意图，风格参考吴恩达课程里的经典梯度下降图。
-用于 6.5 节，帮助直观理解 "梯度" 这个概念：
+用于 7.1 节，帮助直观理解“梯度”这个概念：
 - 曲面 = Loss 关于两个参数(w1, w2)的函数
 - 曲面上某一点的"坡度最陡的上升方向" = 梯度 ∇L
 - 梯度下降走的是它的反方向 -∇L（最陡下降方向）
@@ -98,7 +98,7 @@ path = np.array(path)
 path_z = loss_fn(path[:, 0], path[:, 1]) + 0.05
 
 ax.plot(path[:, 0], path[:, 1], path_z, color="orange", marker="o",
-        markersize=5, linewidth=2, zorder=9, label="梯度下降的路径 (6.6节)")
+        markersize=5, linewidth=2, zorder=9, label="梯度下降的路径（第7章）")
 ax.scatter([0], [0], [loss_fn(0, 0)], color="gold", s=160, marker="*",
            edgecolor="black", zorder=11, label="Loss 最小值 (训练目标)")
 

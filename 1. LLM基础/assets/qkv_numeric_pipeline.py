@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+"""生成 10.5 节的 Q/K/V 数值流水线图。"""
+from pathlib import Path
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+
+TOKENS = ["The", "cat", "is", "sleeping"]
+X = np.array([[0.1, -0.2], [1.0, 0.5], [-0.1, 0.1], [0.9, 0.6]])
+WQ = np.array([[1.0, -0.1], [0.3, 0.8]])
+WK = np.array([[0.8, 0.2], [-0.2, 1.0]])
+WV = np.array([[0.5, 0.5], [-0.5, 1.0]])
+Q, K, V = X @ WQ, X @ WK, X @ WV
+query_index = 1
+scores = Q[query_index] @ K.T / np.sqrt(2)
+weights = np.exp(scores - scores.max())
+weights /= weights.sum()
+output_vector = weights @ V
+
+fig = plt.figure(figsize=(16, 8.2), dpi=170, constrained_layout=True)
+grid = fig.add_gridspec(2, 6, height_ratios=[1.25, 0.9])
+
+
+def draw_matrix(axis, matrix, title, row_labels=None, col_labels=None, cmap="RdBu_r", limits=None):
+    if limits is None:
+        bound = max(abs(matrix).max(), 1e-9)
+        limits = (-bound, bound)
+    image = axis.imshow(matrix, cmap=cmap, vmin=limits[0], vmax=limits[1], aspect="auto")
+    axis.set_title(title, fontsize=10.5, weight="bold")
+    axis.set_xticks(range(matrix.shape[1]), col_labels or [f"d{i}" for i in range(matrix.shape[1])])
+    axis.set_yticks(range(matrix.shape[0]), row_labels or range(matrix.shape[0]))
+    for i in range(matrix.shape[0]):
+        for j in range(matrix.shape[1]):
+            axis.text(j, i, f"{matrix[i, j]:.2f}", ha="center", va="center", fontsize=8)
+    return image
+
+ax_x = fig.add_subplot(grid[0, 0])
+draw_matrix(ax_x, X, "Input X\n[4 tokens, 2 dims]", TOKENS)
+ax_q = fig.add_subplot(grid[0, 1])
+draw_matrix(ax_q, Q, "Q = X WQ", TOKENS)
+ax_k = fig.add_subplot(grid[0, 2])
+draw_matrix(ax_k, K, "K = X WK", TOKENS)
+ax_v = fig.add_subplot(grid[0, 3])
+draw_matrix(ax_v, V, "V = X WV", TOKENS)
+
+ax_scores = fig.add_subplot(grid[0, 4])
+draw_matrix(ax_scores, scores[None, :], "cat scores\nq_cat K^T / sqrt(2)", ["cat query"], TOKENS)
+ax_weights = fig.add_subplot(grid[0, 5])
+draw_matrix(ax_weights, weights[None, :], "Softmax weights", ["cat query"], TOKENS, cmap="Blues", limits=(0, weights.max()))
+
+for axis, label in [(ax_x, "four input hidden states"), (ax_q, "query role"), (ax_k, "matching role"), (ax_v, "content role")]:
+    axis.text(0.5, -0.20, label, transform=axis.transAxes, ha="center", fontsize=8.5, color="#555555")
+
+ax_formula = fig.add_subplot(grid[1, :4])
+ax_formula.axis("off")
+formula = (
+    "Three independent 2 x 2 projections:\n"
+    f"WQ={WQ.tolist()}   WK={WK.tolist()}   WV={WV.tolist()}\n\n"
+    "q_cat x K^T / sqrt(d_k) -> scores -> softmax -> weights\n"
+    "weights x V -> output\n\n"
+    f"scores  = {np.array2string(scores, precision=3)}\n"
+    f"weights = {np.array2string(weights, precision=3)}"
+)
+ax_formula.text(0.5, 0.52, formula, ha="center", va="center", fontsize=12,
+                bbox={"boxstyle": "round,pad=0.7", "facecolor": "#F3F6F8", "edgecolor": "#7393B3"})
+
+ax_out = fig.add_subplot(grid[1, 4:])
+ax_out.bar([0, 1], output_vector, color=["#4C78A8", "#F58518"], width=0.55)
+ax_out.axhline(0, color="#777777", linewidth=0.8)
+ax_out.set_xticks([0, 1], ["output dim 0", "output dim 1"])
+ax_out.set_ylabel("weighted value")
+ax_out.set_title(f"cat output = [{output_vector[0]:.3f}, {output_vector[1]:.3f}]", weight="bold")
+ax_out.grid(axis="y", alpha=0.2)
+
+fig.suptitle("Q decides what to match, K is matched, V supplies the output", fontsize=15, weight="bold")
+output = Path(__file__).resolve().parent / "qkv_numeric_pipeline.png"
+fig.savefig(output, bbox_inches="tight")
+print(f"saved to {output}")

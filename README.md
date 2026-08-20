@@ -21,8 +21,8 @@ flowchart LR
 
 | 项目 | 说明 |
 |---|---|
-| **第一部分第 1～12 章** | 以 NumPy 和小型 PyTorch 模型为主，普通 CPU 笔记本可运行；具体耗时取决于硬件与实验配置 |
-| **第一部分第 13 章及后续训练实验** | 部分实验需要下载 0.5B～7B 开源模型，并可能依赖 CUDA GPU；以各章环境说明为准 |
+| **第一部分第 1～14 章** | 以 NumPy 和小型 PyTorch 模型为主，普通 CPU 笔记本可运行；具体耗时取决于硬件与实验配置 |
+| **第一部分第 15 章及后续训练实验** | 部分实验需要下载 0.5B～7B 开源模型，并可能依赖 CUDA GPU；以各章环境说明为准 |
 | **第二、三部分** | 部分训练实验建议使用消费级 GPU；CPU 能否运行及耗时以各章说明为准 |
 | **模型来源** | 全部使用开源模型（Qwen 系列），在本地运行，不需要注册任何境外付费 API |
 | **国内网络** | 提供 Hugging Face 镜像（`hf-mirror.com`）和 ModelScope 备选方案；pip 清华源加速；推荐按小时计费的国内云 GPU（AutoDL 等），支持支付宝/微信，几元钱即可体验完一节实验 |
@@ -50,22 +50,24 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
-| 1 | 语言模型到底是什么 | Bigram 统计模型、概率分布、Next Token Prediction |
-| 2 | Tokenizer——为什么大模型看不懂文字 | Character → Word → `<UNK>` → Subword → BPE 训练全流程 |
-| 3 | Embedding——大模型如何理解 Token | One-Hot、Embedding Matrix、语义空间的几何直觉 |
-| 4 | 神经网络——从神经元到 MLP | 线性层、激活函数、前向传播理论；**4.1 实践：用 NumPy 实现两层 MLP 并计算 Loss** |
-| 5 | Context Matters（上下文） | Context Window、N-Gram 理论；**5.1 构建 N-Gram 数据集、5.2 实现 N-Gram 语言模型** |
-| 6 | 从 N-Gram 到 Neural Language Model | N-Gram 数据稀疏性、Neural LM 核心思想；6.1～6.7 完成前向、Loss、反向传播、梯度下降与现代优化器，6.8 完成首次端到端训练；**6.9 在 WikiText-2 英文语料上从随机初始化训练 Embedding Language Model** |
-| 7 | RNN——让模型拥有真正的记忆 | Hidden State、RNN Cell、LSTM（三个门）、RNN 的遗忘问题 |
-| 8 | Attention | Dot Product、Softmax、Weighted Sum、Q/K/V、Multi-Head Attention、注意力矩阵可视化 |
-| 9 | Transformer Block | Layer Norm、残差连接、FFN、完整 Block 组装 |
-| 10 | 现代 Transformer 架构演进 | RoPE（旋转位置编码）、RMSNorm、SwiGLU、GQA/MQA |
-| 11 | Stacking Transformer | 为什么层数越多越聪明、浅层 vs 深层分别学什么 |
-| 12 | Transformer 家族 | Encoder-Only / Decoder-Only / Encoder-Decoder 三种架构对比 |
-| 13 | 大语言模型（LLM） | Scaling Law、涌现能力、In-Context Learning、CoT、LoRA/DPO 微调实战、量化与 KV Cache |
-| 14 | 多模态大模型——LLM 如何“看懂”图像 | Patch Embedding、Vision Encoder（CLIP 对比学习）、Projector、图文对齐实战 |
-| 15 | 多模态大模型进阶——统一理解与生成 | VQ-VAE 图像离散化、Diffusion 基础、Any-to-Any 统一模型、手写最小 VQ-VAE 实战 |
-| 16 | 第一部分总结 | 知识地图回顾 |
+| 1 | 语言模型——定义与下一词预测机制 | Bigram 统计模型、概率分布、Next Token Prediction |
+| 2 | Tokenizer——文本离散化与词元表示 | Character → Word → `<UNK>` → Subword → BPE 训练全流程 |
+| 3 | Embedding——Token 的向量表示 | One-Hot、Embedding Matrix、语义空间的几何直觉 |
+| 4 | 神经网络——从神经元到 MLP | Linear、Activation、MLP、Softmax、Cross Entropy；4.1 用 NumPy 实现完整前向计算 |
+| 5 | 固定上下文与 N-Gram 语言模型 | Context Window、Context–Target 数据集、N-Gram、数据稀疏性 |
+| 6 | 神经语言模型——从 N-Gram 到分布式表示 | Concatenate；将第4章组件接入 `Context → Probability → Loss → Perplexity` |
+| 7 | 反向传播与梯度下降 | 链式法则、参数梯度、Embedding 梯度、SGD、PyTorch 端到端训练 |
+| 8 | 现代优化与训练工程 | Momentum、AdamW、初始化、Warmup、学习率调度；在 WikiText-2 上训练与验证 |
+| 9 | RNN——循环状态与序列记忆机制 | Hidden State、RNN Cell、LSTM 门控机制与长期依赖问题 |
+| 10 | Attention | Dot Product、Softmax、Weighted Sum、Q/K/V、Multi-Head Attention、注意力矩阵可视化 |
+| 11 | Transformer Block | Layer Norm、残差连接、FFN、完整 Block 组装 |
+| 12 | 现代 Transformer 架构演进 | RoPE、RMSNorm、SwiGLU、GQA/MQA 与 KV Cache |
+| 13 | Stacking Transformer | 层级表示、Layer Probing 与深度堆叠 |
+| 14 | Transformer 家族 | Encoder-Only、Decoder-Only、Encoder-Decoder 架构对比 |
+| 15 | 大语言模型（LLM） | Scaling Law、In-Context Learning、CoT、量化与 KV Cache |
+| 16 | 多模态大模型——视觉信息编码与语言模型接入 | Patch Embedding、Vision Encoder、Projector 与图文对齐 |
+| 17 | 多模态大模型进阶——统一理解与生成 | VQ-VAE、Diffusion、图像与音频 Tokenization、Any-to-Any 模型 |
+| 18 | 总结 | 第一部分知识地图回顾 |
 
 ---
 
