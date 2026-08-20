@@ -92,25 +92,25 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 ### 3. Agent（Use）
 
-> 让 LLM 从"会说"变成"会做"：Tool Calling、RAG、Planning、Memory、Multi-Agent、协议家族（MCP/A2A/AG-UI）、Skill、Agent Runtime 到 Agentic OS，最后以一个求职作品级的综合实战收尾。
+> 让 LLM 从"会说"变成"会做"：Tool Calling、RAG、Planning、Memory、Reflection 六大必需组件，再到 Loop/Graph 两种可选编排、Multi-Agent、协议家族（MCP/A2A/AG-UI）、Skill、Agent Runtime 与 Agentic OS，最后以一个综合实践收尾。
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
-| 1 | Agent——为什么大模型开始行动 | Thought → Action → Observation 循环、ReAct Agent 手写实现 |
+| 1 | Agent——定义、组成与执行循环 | LLM 与 Agent 的区别、六个必需组件、最小 Agent Workflow 实现 |
 | 2 | Tool Calling——Agent 如何连接真实世界 | 手写 JSON 解析 → 模型原生 Tool Calling → 约束解码（Constrained Decoding） |
 | 3 | Planning——Agent 如何制定行动计划 | 任务分解、Plan-and-Execute、LangGraph 复现 |
-| 4 | Memory 与 RAG——Agent 如何记住并检索知识 | 向量记忆、RAG 完整流程（分块/向量化/检索/增强）、最小 RAG 实战、三大 RAG 框架 |
-| 5 | Reflection——Agent 如何不断自我修正 | Self-Reflection 循环、让 Agent 自我批评并修正 |
-| 6 | Agent Loop——Agent 如何形成自主执行闭环 | 完整 Agent Loop 手写 + LangGraph 复现 |
-| 7 | Multi-Agent——多个 Agent 如何协同完成复杂任务 | 多 Agent 协作、CrewAI 实战 |
-| 8 | Agent 协议家族——MCP、A2A、AG-UI 分别连接了什么？ | MCP（连工具）、A2A（连 Agent）、AG-UI（连前端 UI）三方协议对比 |
-| 9 | Skill——Agent 如何拥有可复用的专业能力 | SKILL.md、Progressive Disclosure、Skill 与 Tool/MCP 的层次关系 |
-| 10 | Agent Runtime——Agent 如何真正运行起来 | 模型常驻、会话管理、可观测性（Observability/Trace/Span） |
-| 11 | Graph Engineering——下一代 Agent Runtime 的工程范式 | 有状态图、LangGraph、Checkpoint 断点恢复 |
+| 4 | Agent Memory 与 RAG——状态保存与知识检索 | 向量记忆、RAG 完整流程（分块/向量化/检索/增强）、最小 RAG 实战 |
+| 5 | Reflection——Agent 如何不断自我修正 | Evaluator-Optimizer 模式、固定轮数的评估与修正 |
+| 6 | Loop Engineering（**可选**） | Agent Loop、ReAct、终止条件、错误重试、上下文管理 |
+| 7 | Graph Engineering（**可选**） | 有状态图、LangGraph、Checkpoint 断点恢复 |
+| 8 | Multi-Agent——多个 Agent 如何协同完成复杂任务 | 多 Agent 协作、CrewAI 实战 |
+| 9 | Agent 协议家族——MCP、A2A、AG-UI 分别连接了什么？ | MCP（连工具）、A2A（连 Agent）、AG-UI（连前端 UI）三方协议对比 |
+| 10 | Skill——Agent 能力的封装、加载与复用 | SKILL.md、Progressive Disclosure、Skill 与 Tool/MCP 的层次关系 |
+| 11 | Agent Runtime——执行架构与服务化运行 | 模型常驻、会话管理、可观测性（Observability/Trace/Span）、流式输出、评测 |
 | 12 | Execution Environment——Agent 如何操作数字世界 | 安全代码沙箱、浏览器自动化 |
-| 13 | Agentic Runtime——为什么 Agent 正在拥有自己的运行平台 | Agent 调度器、进程管理视角 |
-| 14 | Agentic OS——为什么 Agent 将重新定义操作系统 | Capability Registry、事件驱动架构 |
-| 15 | 综合实战——从零构建一个能写进简历的文档问答 Agent | RAG + LLM + FastAPI 三层架构、求职作品、抑制幻觉 |
+| 13 | Agentic Runtime——面向 Agent 的运行平台架构 | Agent 调度器、进程管理视角 |
+| 14 | Agentic OS——面向 Agent 的操作系统架构 | Capability Registry、事件驱动架构 |
+| 15 | 综合实践——文档问答 Agent 的端到端构建 | RAG + LLM + FastAPI 三层架构、抑制幻觉 |
 
 ---
 
