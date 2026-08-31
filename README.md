@@ -64,7 +64,7 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 12 | 现代 Transformer 架构演进 | RoPE、RMSNorm、SwiGLU、GQA/MQA 与 KV Cache |
 | 13 | Stacking Transformer | 层级表示、Layer Probing 与深度堆叠 |
 | 14 | Transformer 家族 | Encoder-Only、Decoder-Only、Encoder-Decoder 架构对比 |
-| 15 | 大语言模型（LLM） | Scaling Law、In-Context Learning、CoT、量化与 KV Cache |
+| 15 | 大语言模型（LLM） | Scaling Law、In-Context Learning、CoT、Long Context、KV Cache 原理、MoE |
 | 16 | 多模态大模型——视觉信息编码与语言模型接入 | Patch Embedding、Vision Encoder、Projector 与图文对齐 |
 | 17 | 多模态大模型进阶——统一理解与生成 | VQ-VAE、Diffusion、图像与音频 Tokenization、Any-to-Any 模型 |
 | 18 | 总结 | 第一部分知识地图回顾 |
@@ -78,15 +78,17 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
 | 1 | Alignment——为什么 GPT 变成了 ChatGPT | Base Model vs Aligned Model 的行为差异 |
-| 2 | SFT——模型如何学会理解人类指令 | Chat Template、Loss Mask、LoRA 微调 |
-| 3 | Preference Learning——模型如何学会人类真正喜欢的回答 | Reward Model、RLHF（PPO）、DPO、ORPO/SimPO/GRPO |
-| 4 | Reasoning Alignment——模型如何学会真正推理 | Process/Outcome Supervision、GRPO、推理时 Scaling |
-| 5 | Safety Alignment——如何让大模型既强大又安全 | Jailbreak、Guardrail、输入输出安全护栏 |
-| 6 | GPU 基础与算子——为什么理解硬件，才能真正理解训练与推理工程 | SM/Tensor Core、HBM/SRAM 显存层级、算子融合、Triton 实战 |
-| 7 | LLM Training Stack——现代大模型训练工程 | 并行策略（Data/Tensor/Pipeline Parallel）、ZeRO、Accelerate + DeepSpeed |
-| 8 | LLM Inference Stack——现代大模型推理工程 | Continuous Batching、PagedAttention、量化、vLLM 实战 |
-| 9 | LLM Evaluation——如何科学评价一个大语言模型 | Perplexity、Benchmark、Arena、LLM-as-a-Judge |
-| 10 | 第二部分总结 | 从 Base Model 到现代 AI 助手的完整知识地图 |
+| 2 | 三种学习范式——监督、无监督与自监督 | 标签从哪来、自监督为何能规模化、模型自举 |
+| 3 | 数据工程——数据从哪来、怎么洗、怎么配比 | Common Crawl→C4、清洗四关、去重、PII 脱敏、质量筛选 |
+| 4 | SFT——模型如何学会理解人类指令 | Chat Template、Loss Mask、LoRA/QLoRA 微调 |
+| 5 | Preference Learning——模型如何学会人类真正喜欢的回答 | Reward Model、RLHF（PPO）、DPO、ORPO/SimPO/GRPO |
+| 6 | Reasoning Alignment——模型如何学会真正推理 | Process/Outcome Supervision、GRPO、推理时 Scaling |
+| 7 | Safety Alignment——如何让大模型既强大又安全 | Jailbreak、Guardrail、输入输出安全护栏 |
+| 8 | GPU 基础与算子——为什么理解硬件，才能真正理解训练与推理工程 | SM/Tensor Core、HBM/SRAM 显存层级、算子融合、Triton 实战 |
+| 9 | LLM Training Stack——现代大模型训练工程 | 并行策略（Data/Tensor/Pipeline Parallel）、ZeRO、Accelerate + DeepSpeed |
+| 10 | LLM Inference Stack——现代大模型推理工程 | Continuous Batching、PagedAttention、量化、KV Cache 显存账本；10.1 vLLM 服务端并发实战、10.2 本地量化推理实战 |
+| 11 | LLM Evaluation——如何科学评价一个大语言模型 | Perplexity、Benchmark、Arena、LLM-as-a-Judge |
+| 12 | 第二部分总结 | 从 Base Model 到现代 AI 助手的完整知识地图 |
 
 ---
 
