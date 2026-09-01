@@ -19,8 +19,8 @@ weights = np.exp(scores - scores.max())
 weights /= weights.sum()
 output_vector = weights @ V
 
-fig = plt.figure(figsize=(16, 8.2), dpi=170, constrained_layout=True)
-grid = fig.add_gridspec(2, 6, height_ratios=[1.25, 0.9])
+fig = plt.figure(figsize=(16, 8.8), dpi=170, constrained_layout=True)
+grid = fig.add_gridspec(2, 6, height_ratios=[1.35, 1.0], hspace=0.35)
 
 
 def draw_matrix(axis, matrix, title, row_labels=None, col_labels=None, cmap="RdBu_r", limits=None):
@@ -51,7 +51,8 @@ ax_weights = fig.add_subplot(grid[0, 5])
 draw_matrix(ax_weights, weights[None, :], "Softmax weights", ["cat query"], TOKENS, cmap="Blues", limits=(0, weights.max()))
 
 for axis, label in [(ax_x, "four input hidden states"), (ax_q, "query role"), (ax_k, "matching role"), (ax_v, "content role")]:
-    axis.text(0.5, -0.20, label, transform=axis.transAxes, ha="center", fontsize=8.5, color="#555555")
+    axis.text(0.5, -0.28, label, transform=axis.transAxes, ha="center", va="top",
+              fontsize=8.5, color="#555555", clip_on=False)
 
 ax_formula = fig.add_subplot(grid[1, :4])
 ax_formula.axis("off")
@@ -63,10 +64,12 @@ formula = (
     f"scores  = {np.array2string(scores, precision=3)}\n"
     f"weights = {np.array2string(weights, precision=3)}"
 )
-ax_formula.text(0.5, 0.52, formula, ha="center", va="center", fontsize=12,
+ax_formula.text(0.03, 0.92, formula, ha="left", va="top", fontsize=10.5,
+                linespacing=1.35, transform=ax_formula.transAxes,
                 bbox={"boxstyle": "round,pad=0.7", "facecolor": "#F3F6F8", "edgecolor": "#7393B3"})
 
 ax_out = fig.add_subplot(grid[1, 4:])
+ax_out.set_anchor("N")
 ax_out.bar([0, 1], output_vector, color=["#4C78A8", "#F58518"], width=0.55)
 ax_out.axhline(0, color="#777777", linewidth=0.8)
 ax_out.set_xticks([0, 1], ["output dim 0", "output dim 1"])
