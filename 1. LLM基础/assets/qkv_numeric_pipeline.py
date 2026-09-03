@@ -19,8 +19,8 @@ weights = np.exp(scores - scores.max())
 weights /= weights.sum()
 output_vector = weights @ V
 
-fig = plt.figure(figsize=(16, 8.8), dpi=170, constrained_layout=True)
-grid = fig.add_gridspec(2, 6, height_ratios=[1.35, 1.0], hspace=0.35)
+fig = plt.figure(figsize=(16, 6.6), dpi=170, constrained_layout=True)
+grid = fig.add_gridspec(2, 6, height_ratios=[1.25, 0.85], hspace=0.12)
 
 
 def draw_matrix(axis, matrix, title, row_labels=None, col_labels=None, cmap="RdBu_r", limits=None):
@@ -51,21 +51,21 @@ ax_weights = fig.add_subplot(grid[0, 5])
 draw_matrix(ax_weights, weights[None, :], "Softmax weights", ["cat query"], TOKENS, cmap="Blues", limits=(0, weights.max()))
 
 for axis, label in [(ax_x, "four input hidden states"), (ax_q, "query role"), (ax_k, "matching role"), (ax_v, "content role")]:
-    axis.text(0.5, -0.28, label, transform=axis.transAxes, ha="center", va="top",
+    axis.text(0.5, -0.20, label, transform=axis.transAxes, ha="center", va="top",
               fontsize=8.5, color="#555555", clip_on=False)
 
 ax_formula = fig.add_subplot(grid[1, :4])
 ax_formula.axis("off")
 formula = (
-    "Three independent 2 x 2 projections:\n"
-    f"WQ={WQ.tolist()}   WK={WK.tolist()}   WV={WV.tolist()}\n\n"
-    "q_cat x K^T / sqrt(d_k) -> scores -> softmax -> weights\n"
-    "weights x V -> output\n\n"
+    "Three independent 2 x 2 projections:  "
+    f"WQ={WQ.tolist()}   WK={WK.tolist()}   WV={WV.tolist()}\n"
+    "q_cat x K^T / sqrt(d_k) -> scores -> softmax -> weights   ->   "
+    f"weights x V -> output = [{output_vector[0]:.3f}, {output_vector[1]:.3f}]\n"
     f"scores  = {np.array2string(scores, precision=3)}\n"
     f"weights = {np.array2string(weights, precision=3)}"
 )
-ax_formula.text(0.03, 0.92, formula, ha="left", va="top", fontsize=10.5,
-                linespacing=1.35, transform=ax_formula.transAxes,
+ax_formula.text(0.03, 0.95, formula, ha="left", va="top", fontsize=10.5,
+                linespacing=1.3, transform=ax_formula.transAxes,
                 bbox={"boxstyle": "round,pad=0.7", "facecolor": "#F3F6F8", "edgecolor": "#7393B3"})
 
 ax_out = fig.add_subplot(grid[1, 4:])
@@ -77,7 +77,7 @@ ax_out.set_ylabel("weighted value")
 ax_out.set_title(f"cat output = [{output_vector[0]:.3f}, {output_vector[1]:.3f}]", weight="bold")
 ax_out.grid(axis="y", alpha=0.2)
 
-fig.suptitle("Q decides what to match, K is matched, V supplies the output", fontsize=15, weight="bold")
+fig.suptitle("Q decides what to match, K is matched, V supplies the output", fontsize=13.5, weight="bold")
 output = Path(__file__).resolve().parent / "qkv_numeric_pipeline.png"
 fig.savefig(output, bbox_inches="tight")
 print(f"saved to {output}")
