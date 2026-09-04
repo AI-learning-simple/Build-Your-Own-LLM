@@ -63,10 +63,12 @@ draw_box(ax, 9.2, 0, 1.5, 0.62, "Causal Mask\n（可选）", facecolor="#F4F4F4"
          edgecolor="#888888", dashed=True)
 draw_box(ax, 10.8, 0, 1.2, 0.62, "Softmax")
 
-# 取内容：A·V 与输出
+# 取内容：A·V 得到 C，再乘 W_O 得到模块输出
 draw_box(ax, 12.4, -0.5, 1.7, 0.72, "A · V\n加权求和",
          facecolor="#FFF3D6", edgecolor="#B98600")
-draw_box(ax, 14.35, -0.5, 1.3, 0.72, "输出\n（新表示）",
+draw_box(ax, 14.35, -0.5, 1.3, 0.72, "C\n（上下文向量）",
+         facecolor="#FFF3D6", edgecolor="#B98600")
+draw_box(ax, 16.05, -0.5, 1.7, 0.72, "Output\n（C @ W_O）",
          facecolor="#E7F5EA", edgecolor="#2E7D46")
 
 # ===== 连线 =====
@@ -95,8 +97,9 @@ arrow(ax, (12.4, 0), (12.4, -0.14))
 line(ax, [4.45, 12.4], [y_V, y_V])
 arrow(ax, (12.4, y_V), (12.4, -0.86))
 
-# A·V → 输出
+# A·V → C → Output
 arrow(ax, (13.25, -0.5), (13.7, -0.5))
+arrow(ax, (15.0, -0.5), (15.2, -0.5))
 
 # ===== 底部三阶段标注 =====
 def stage_bracket(ax, x0, x1, y, label, cx):
@@ -109,9 +112,9 @@ def stage_bracket(ax, x0, x1, y, label, cx):
 yb = -1.75
 stage_bracket(ax, 0.1, 4.5, yb, "第 0 步：备料——三路投影，一次性完成", 2.3)
 stage_bracket(ax, 5.0, 11.4, yb, "第 1 步：打分——只用 Q 表和 K 表", 8.2)
-stage_bracket(ax, 11.9, 15.05, yb, "第 2 步：取内容——只用 V 表", 13.45)
+stage_bracket(ax, 11.9, 16.95, yb, "第 2 步：取内容——只用 V 表（C 还要乘 W_O 才是 Output）", 14.4)
 
-ax.set_xlim(-0.3, 15.4)
+ax.set_xlim(-0.3, 17.3)
 ax.set_ylim(-2.35, 1.6)
 ax.axis("off")
 ax.set_title("Scaled Dot-Product Attention 完整流程：先备料、再打分、最后取内容",

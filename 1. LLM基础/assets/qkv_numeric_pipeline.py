@@ -4,8 +4,17 @@ from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
+import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import numpy as np
+
+FONT_CANDIDATES = [
+    "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC",
+    "WenQuanYi Micro Hei", "Source Han Sans SC", "Arial Unicode MS",
+]
+available = {font.name for font in fm.fontManager.ttflist}
+font = next((name for name in FONT_CANDIDATES if name in available), "DejaVu Sans")
+plt.rcParams.update({"font.family": font, "axes.unicode_minus": False})
 
 TOKENS = ["The", "cat", "is", "sleeping"]
 X = np.array([[0.1, -0.2], [1.0, 0.5], [-0.1, 0.1], [0.9, 0.6]])
@@ -60,7 +69,7 @@ formula = (
     "Three independent 2 x 2 projections:  "
     f"WQ={WQ.tolist()}   WK={WK.tolist()}   WV={WV.tolist()}\n"
     "q_cat x K^T / sqrt(d_k) -> scores -> softmax -> weights   ->   "
-    f"weights x V -> output = [{output_vector[0]:.3f}, {output_vector[1]:.3f}]\n"
+    f"weights x V -> C = [{output_vector[0]:.3f}, {output_vector[1]:.3f}]   (C @ W_O -> Output)\n"
     f"scores  = {np.array2string(scores, precision=3)}\n"
     f"weights = {np.array2string(weights, precision=3)}"
 )
@@ -72,9 +81,9 @@ ax_out = fig.add_subplot(grid[1, 4:])
 ax_out.set_anchor("N")
 ax_out.bar([0, 1], output_vector, color=["#4C78A8", "#F58518"], width=0.55)
 ax_out.axhline(0, color="#777777", linewidth=0.8)
-ax_out.set_xticks([0, 1], ["output dim 0", "output dim 1"])
+ax_out.set_xticks([0, 1], ["C 第 0 维", "C 第 1 维"])
 ax_out.set_ylabel("weighted value")
-ax_out.set_title(f"cat output = [{output_vector[0]:.3f}, {output_vector[1]:.3f}]", weight="bold")
+ax_out.set_title(f"cat 的 C = [{output_vector[0]:.3f}, {output_vector[1]:.3f}]", weight="bold")
 ax_out.grid(axis="y", alpha=0.2)
 
 fig.suptitle("Q decides what to match, K is matched, V supplies the output", fontsize=13.5, weight="bold")
