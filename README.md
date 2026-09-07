@@ -21,8 +21,8 @@ flowchart LR
 
 | 项目 | 说明 |
 |---|---|
-| **第一部分第 1～14 章** | 以 NumPy 和小型 PyTorch 模型为主，普通 CPU 笔记本可运行；具体耗时取决于硬件与实验配置 |
-| **第一部分第 15 章及后续训练实验** | 部分实验需要下载 0.5B～7B 开源模型，并可能依赖 CUDA GPU；以各章环境说明为准 |
+| **第一部分第 1～12 章** | 以 NumPy 和小型 PyTorch 模型为主，普通 CPU 笔记本可运行；具体耗时取决于硬件与实验配置 |
+| **第一部分第 13 章及后续训练实验** | 部分实验需要下载 0.5B～7B 开源模型，并可能依赖 CUDA GPU；以各章环境说明为准 |
 | **第二、三部分** | 部分训练实验建议使用消费级 GPU；CPU 能否运行及耗时以各章说明为准 |
 | **模型来源** | 全部使用开源模型（Qwen 系列），在本地运行，不需要注册任何境外付费 API |
 | **国内网络** | 提供 Hugging Face 镜像（`hf-mirror.com`）和 ModelScope 备选方案；pip 清华源加速；推荐按小时计费的国内云 GPU（AutoDL 等），支持支付宝/微信，几元钱即可体验完一节实验 |
@@ -60,14 +60,12 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 8 | 现代优化与训练工程 | Momentum、AdamW、初始化、Warmup、学习率调度；在 WikiText-2 上训练与验证 |
 | 9 | RNN——循环状态与序列记忆机制 | Hidden State、RNN Cell、LSTM 门控机制与长期依赖问题 |
 | 10 | Attention | Dot Product、Softmax、Weighted Sum、Q/K/V、Multi-Head Attention、注意力矩阵可视化 |
-| 11 | Transformer Block | Layer Norm、残差连接、FFN、完整 Block 组装 |
-| 12 | 现代 Transformer 架构演进 | RoPE、RMSNorm、SwiGLU、GQA/MQA 与 KV Cache |
-| 13 | Stacking Transformer | 层级表示、Layer Probing 与深度堆叠 |
-| 14 | Transformer 家族 | Encoder-Only、Decoder-Only、Encoder-Decoder 架构对比 |
-| 15 | 大语言模型（LLM） | Scaling Law、In-Context Learning、CoT、Long Context、KV Cache 原理、MoE |
-| 16 | 多模态大模型——视觉信息编码与语言模型接入 | Patch Embedding、Vision Encoder、Projector 与图文对齐 |
-| 17 | 多模态大模型进阶——统一理解与生成 | VQ-VAE、Diffusion、图像与音频 Tokenization、Any-to-Any 模型 |
-| 18 | 总结 | 第一部分知识地图回顾 |
+| 11 | Transformer 结构与层堆叠 | Layer Norm、残差连接、FFN、Block 组装、层堆叠与表示学习 |
+| 12 | Transformer 架构演进与家族 | RoPE、RMSNorm、SwiGLU、GQA/MQA 与 KV Cache、Encoder/Decoder/Enc-Dec 架构 |
+| 13 | 大语言模型（LLM） | Scaling Law、In-Context Learning、CoT、Long Context、KV Cache 原理、MoE |
+| 14 | 多模态大模型——视觉信息编码与语言模型接入 | Patch Embedding、Vision Encoder、Projector 与图文对齐 |
+| 15 | 多模态大模型进阶——统一理解与生成 | VQ-VAE、Diffusion、图像与音频 Tokenization、Any-to-Any 模型 |
+| 16 | 总结 | 第一部分知识地图回顾 |
 
 ---
 
