@@ -75,7 +75,7 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
-| 1 | Alignment——为什么 GPT 变成了 ChatGPT | Base Model vs Aligned Model 的行为差异 |
+| 1 | Alignment——为什么 GPT 变成了 ChatGPT | Base Model vs Instruct Model 的行为差异 |
 | 2 | 三种学习范式——监督、无监督与自监督 | 标签从哪来、自监督为何能规模化、模型自举 |
 | 3 | 数据工程——数据从哪来、怎么洗、怎么配比 | Common Crawl→C4、清洗四关、去重、PII 脱敏、质量筛选 |
 | 4 | SFT——模型如何学会理解人类指令 | Chat Template、Loss Mask、LoRA/QLoRA 微调 |
