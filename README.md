@@ -69,48 +69,48 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 ---
 
-### 2. Alignment 与训练工程
+### 2. 模型对齐（Alignment）与训练工程
 
-> 从 Base Model 到现代 AI 助手：SFT、RLHF、DPO、GRPO，以及支撑这一切的 GPU、训练和推理工程。
+> 从基础模型（Base Model）到现代 AI 助手：监督微调（SFT）、基于人类反馈的强化学习（RLHF）、直接偏好优化（DPO）、组相对策略优化（GRPO），以及支撑这一切的图形处理器（GPU）、训练和推理工程。专业术语首次出现时同时给出中英文，完整对照表见第 12 章附录。
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
-| 1 | Alignment——为什么 GPT 变成了 ChatGPT | Base Model vs Instruct Model 的行为差异 |
-| 2 | 三种学习范式——监督、无监督与自监督 | 标签从哪来、自监督为何能规模化、模型自举 |
-| 3 | 数据工程——数据从哪来、怎么洗、怎么配比 | Common Crawl→C4、清洗四关、去重、PII 脱敏、质量筛选 |
-| 4 | SFT——模型如何学会理解人类指令 | Chat Template、Loss Mask、LoRA/QLoRA 微调 |
-| 5 | Preference Learning——模型如何学会人类真正喜欢的回答 | Reward Model、RLHF（PPO）、DPO、ORPO/SimPO/GRPO |
-| 6 | Reasoning Alignment——模型如何学会真正推理 | Process/Outcome Supervision、GRPO、推理时 Scaling |
-| 7 | Safety Alignment——如何让大模型既强大又安全 | Jailbreak、Guardrail、输入输出安全护栏 |
-| 8 | GPU 基础与算子——为什么理解硬件，才能真正理解训练与推理工程 | SM/Tensor Core、HBM/SRAM 显存层级、算子融合、Triton 实战 |
-| 9 | LLM Training Stack——现代大模型训练工程 | 并行策略（Data/Tensor/Pipeline Parallel）、ZeRO、Accelerate + DeepSpeed |
-| 10 | LLM Inference Stack——现代大模型推理工程 | Continuous Batching、PagedAttention、量化、KV Cache 显存账本；10.1 vLLM 服务端并发实战、10.2 本地量化推理实战 |
-| 11 | LLM Evaluation——如何科学评价一个大语言模型 | Perplexity、Benchmark、Arena、LLM-as-a-Judge |
-| 12 | 第二部分总结 | 从 Base Model 到现代 AI 助手的完整知识地图 |
+| 1 | 模型对齐（Alignment）——从基础模型到对话助手 | 基础模型与指令模型的行为差异、InstructGPT 流水线 |
+| 2 | 三种学习范式（Learning Paradigms）——监督学习、无监督学习与自监督学习 | 标签来源、自监督为何能规模化、模型自举 |
+| 3 | 数据工程——语料来源、清洗与配比 | Common Crawl→C4、清洗四关、去重、个人身份信息（PII）脱敏、质量筛选 |
+| 4 | 监督微调（SFT）——指令跟随能力的训练 | 对话模板（Chat Template）、损失掩码（Loss Mask）、低秩适配/量化低秩适配（LoRA/QLoRA）微调、对数几率蒸馏（KL 散度） |
+| 5 | 偏好学习（Preference Learning）——人类偏好的建模与优化 | 奖励模型（Reward Model）、基于人类反馈的强化学习与近端策略优化（RLHF/PPO）、直接偏好优化（DPO）、ORPO/SimPO/GRPO |
+| 6 | 推理对齐（Reasoning Alignment）——推理能力的训练与对齐 | 过程监督/结果监督（Process/Outcome Supervision）、组相对策略优化（GRPO）、测试时扩展（test-time scaling） |
+| 7 | 安全对齐（Safety Alignment）——风险边界与多层防护 | 越狱（Jailbreak）、护栏（Guardrail）、输入输出安全审核 |
+| 8 | 图形处理器（GPU）基础与算子——训练与推理的硬件基础 | 流式多处理器/张量核心（SM/Tensor Core）、高带宽内存/片上缓存（HBM/SRAM）、算子融合、Triton 实战 |
+| 9 | 大模型训练栈（LLM Training Stack）——现代大模型训练工程 | 并行策略（数据/张量/流水线并行 Data/Tensor/Pipeline Parallel）、零冗余优化器（ZeRO）、Accelerate + DeepSpeed |
+| 10 | 大模型推理栈（LLM Inference Stack）——现代大模型推理工程 | 连续批处理（Continuous Batching）、分页注意力（PagedAttention）、量化（Quantization）、键值缓存（KV Cache）显存构成；10.1 vLLM 服务端并发实战、10.2 本地量化推理实战 |
+| 11 | 大模型评测（LLM Evaluation）——评价方法与局限 | 困惑度（Perplexity）、基准测试（Benchmark）、竞技场（Arena）、大模型评审（LLM-as-a-Judge） |
+| 12 | 第二部分总结——从基础模型到现代 AI 助手 | 完整知识地图与第二部分术语对照表 |
 
 ---
 
-### 3. Agent（Use）
+### 3. 智能体（Agent）与运行平台
 
-> 让 LLM 从"会说"变成"会做"：Tool Calling、RAG、Planning、Memory、Reflection 六大必需组件，再到 Loop/Graph 两种可选编排、Multi-Agent、协议家族（MCP/A2A/AG-UI）、Skill、Agent Runtime 与 Agentic OS，最后以一个综合实践收尾。
+> 让大语言模型（LLM）从"会说"变成"会做"：工具调用（Tool Calling）、检索增强生成（RAG）、规划（Planning）、记忆（Memory）、反思（Reflection）等必需组件，再到循环（Loop）与图（Graph）两种可选编排、多智能体（Multi-Agent）、协议家族（MCP / A2A / AG-UI）、技能（Skill）、运行时（Runtime）与智能体操作系统（Agentic OS），最后以一个综合实践收尾。
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
-| 1 | Agent——定义、组成与执行循环 | LLM 与 Agent 的区别、六个必需组件、最小 Agent Workflow 实现 |
-| 2 | Tool Calling——Agent 如何连接真实世界 | 手写 JSON 解析 → 模型原生 Tool Calling → 约束解码（Constrained Decoding） |
-| 3 | Planning——Agent 如何制定行动计划 | 任务分解、Plan-and-Execute、LangGraph 复现 |
-| 4 | Agent Memory 与 RAG——状态保存与知识检索 | 向量记忆、RAG 完整流程（分块/向量化/检索/增强）、最小 RAG 实战 |
-| 5 | Reflection——Agent 如何不断自我修正 | Evaluator-Optimizer 模式、固定轮数的评估与修正 |
-| 6 | Loop Engineering（**可选**） | Agent Loop、ReAct、终止条件、错误重试、上下文管理 |
-| 7 | Graph Engineering（**可选**） | 有状态图、LangGraph、Checkpoint 断点恢复 |
-| 8 | Multi-Agent——多个 Agent 如何协同完成复杂任务 | 多 Agent 协作、CrewAI 实战 |
-| 9 | Agent 协议家族——MCP、A2A、AG-UI 分别连接了什么？ | MCP（连工具）、A2A（连 Agent）、AG-UI（连前端 UI）三方协议对比 |
-| 10 | Skill——Agent 能力的封装、加载与复用 | SKILL.md、Progressive Disclosure、Skill 与 Tool/MCP 的层次关系 |
-| 11 | Agent Runtime——执行架构与服务化运行 | 模型常驻、会话管理、可观测性（Observability/Trace/Span）、流式输出、评测 |
-| 12 | Execution Environment——Agent 如何操作数字世界 | 安全代码沙箱、浏览器自动化 |
-| 13 | Agentic Runtime——面向 Agent 的运行平台架构 | Agent 调度器、进程管理视角 |
-| 14 | Agentic OS——面向 Agent 的操作系统架构 | Capability Registry、事件驱动架构 |
-| 15 | 综合实践——文档问答 Agent 的端到端构建 | RAG + LLM + FastAPI 三层架构、抑制幻觉 |
+| 1 | 智能体（Agent）——定义、组成与执行循环 | LLM 与 Agent 的区别、六个必需组件、记忆层与控制流层的边界、最小工作流（Workflow）实现 |
+| 2 | 工具调用（Tool Calling）——智能体连接真实世界的方式 | 手写 JSON 解析 → 模型原生工具调用 → 约束解码（Constrained Decoding）能保证与不能保证的边界 |
+| 3 | 规划（Planning）——智能体的任务分解与行动计划 | 任务分解、Plan-and-Execute、ReWOO、Tree of Thoughts、规划与反思的边界、LangGraph 复现 |
+| 4 | 智能体记忆（Agent Memory）与检索增强生成（RAG）——状态保存与知识检索 | 记忆的写入/更新/遗忘策略、RAG 完整流程（分块/向量化/检索/重排/增强）、记忆与 RAG 的区别 |
+| 5 | 反思机制（Reflection）——智能体的自我评估与修正 | Self-Refine、Reflexion、Evaluator-Optimizer 的差异、自我确认偏差与过度修正 |
+| 6 | 智能体循环工程（Agent Loop Engineering）——自主执行闭环的设计与边界 | ReAct 推理轨迹回填、终止条件、错误重试、上下文管理、副作用工具的幂等性 |
+| 7 | 图工程（Graph Engineering）——复杂智能体流程的编排范式（**可选**） | 状态图、Checkpoint / Resume、Durable Execution 的边界、何时不该上图 |
+| 8 | 多智能体（Multi-Agent）——协作模式与工程边界 | 流水线、主从、层级、黑板、对等协作与竞争评审、上下文传递与冲突处理、CrewAI 实战 |
+| 9 | 智能体协议家族（Agent Protocol Family）——MCP、A2A 与 AG-UI 的连接对象 | MCP（连工具/资源/提示）、A2A（连 Agent）、AG-UI（连前端）三方协议对比与协作 |
+| 10 | 技能（Skill）——智能体能力的封装、加载与复用 | SKILL.md、Progressive Disclosure、Skill 与 Tool/MCP 的层次关系、误触发与加载预算 |
+| 11 | 智能体运行时（Agent Runtime）——执行架构与服务化运行 | 常驻服务、会话管理、可观测性（Observability / Trace / Span）、流式输出、评测 |
+| 12 | 执行环境（Execution Environment）——智能体如何操作数字世界 | 多层沙箱、浏览器自动化风险、提示注入（Prompt Injection）的纵深防御 |
+| 13 | 智能体运行平台（Agentic Runtime）——面向智能体集群的运行平台架构 | 调度、配额、抢占与公平性、共享状态一致性、Capability Registry |
+| 14 | 智能体操作系统（Agentic OS）——面向智能体的操作系统架构设想 | Capability First、Event First、OS 类比的成立与失效、未解问题 |
+| 15 | 综合实践——文档问答智能体（Agent）的端到端构建 | RAG + LLM + FastAPI 三层架构、失败模式与改进方向、第三部分术语对照表 |
 
 ---
 
