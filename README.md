@@ -73,7 +73,7 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 ### 2. 模型对齐（Alignment）与训练工程
 
-> 从基础模型（Base Model）到现代 AI 助手：监督微调（SFT）、基于人类反馈的强化学习（RLHF）、直接偏好优化（DPO）、组相对策略优化（GRPO），以及支撑这一切的图形处理器（GPU）、训练和推理工程。专业术语首次出现时同时给出中英文，完整对照表见第 12 章附录。
+> 从基础模型（Base Model）到现代 AI 助手：监督微调（SFT）、基于人类反馈的强化学习（RLHF）、直接偏好优化（DPO）、组相对策略优化（GRPO）、智能体强化学习（Agentic RL），以及支撑这一切的图形处理器（GPU）、训练和推理工程。专业术语首次出现时同时给出中英文，完整对照表见第 13 章附录。
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
@@ -83,12 +83,13 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 4 | 监督微调（SFT）——指令跟随能力的训练 | 对话模板（Chat Template）、损失掩码（Loss Mask）、低秩适配/量化低秩适配（LoRA/QLoRA）微调、对数几率蒸馏（KL 散度） |
 | 5 | 偏好学习（Preference Learning）——人类偏好的建模与优化 | 奖励模型（Reward Model）、基于人类反馈的强化学习与近端策略优化（RLHF/PPO）、直接偏好优化（DPO）、ORPO/SimPO/GRPO |
 | 6 | 推理对齐（Reasoning Alignment）——推理能力的训练与对齐 | 过程监督/结果监督（Process/Outcome Supervision）、组相对策略优化（GRPO）、测试时扩展（test-time scaling） |
-| 7 | 安全对齐（Safety Alignment）——风险边界与多层防护 | 越狱（Jailbreak）、护栏（Guardrail）、输入输出安全审核 |
-| 8 | 图形处理器（GPU）基础与算子——训练与推理的硬件基础 | 流式多处理器/张量核心（SM/Tensor Core）、高带宽内存/片上缓存（HBM/SRAM）、算子融合、Triton 实战 |
-| 9 | 大模型训练栈（LLM Training Stack）——现代大模型训练工程 | 并行策略（数据/张量/流水线并行 Data/Tensor/Pipeline Parallel）、零冗余优化器（ZeRO）、Accelerate + DeepSpeed |
-| 10 | 大模型推理栈（LLM Inference Stack）——现代大模型推理工程 | 连续批处理（Continuous Batching）、分页注意力（PagedAttention）、量化（Quantization）、键值缓存（KV Cache）显存构成；10.1 vLLM 服务端并发实战、10.2 本地量化推理实战 |
-| 11 | 大模型评测（LLM Evaluation）——评价方法与局限 | 困惑度（Perplexity）、基准测试（Benchmark）、竞技场（Arena）、大模型评审（LLM-as-a-Judge） |
-| 12 | 第二部分总结——从基础模型到现代 AI 助手 | 完整知识地图与第二部分术语对照表 |
+| 7 | 智能体强化学习（Agentic RL）——在环境中训练会使用工具的智能体 | 环境与轨迹、结果/过程奖励、轨迹级信用分配、rollout 与训练解耦；7.1 最小多轮工具调用强化学习循环 |
+| 8 | 安全对齐（Safety Alignment）——风险边界与多层防护 | 越狱（Jailbreak）、护栏（Guardrail）、输入输出安全审核 |
+| 9 | 图形处理器（GPU）基础与算子——训练与推理的硬件基础 | 流式多处理器/张量核心（SM/Tensor Core）、高带宽内存/片上缓存（HBM/SRAM）、算子融合、Triton 实战 |
+| 10 | 大模型训练栈（LLM Training Stack）——现代大模型训练工程 | 并行策略（数据/张量/流水线并行 Data/Tensor/Pipeline Parallel）、零冗余优化器（ZeRO）、Accelerate + DeepSpeed |
+| 11 | 大模型推理栈（LLM Inference Stack）——现代大模型推理工程 | 连续批处理（Continuous Batching）、分页注意力（PagedAttention）、量化（Quantization）、键值缓存（KV Cache）显存构成；11.1 vLLM 服务端并发实战、11.2 本地量化推理实战 |
+| 12 | 大模型评测（LLM Evaluation）——评价方法与局限 | 困惑度（Perplexity）、基准测试（Benchmark）、竞技场（Arena）、大模型评审（LLM-as-a-Judge） |
+| 13 | 第二部分总结——从基础模型到现代 AI 助手 | 完整知识地图与第二部分术语对照表 |
 
 ---
 
