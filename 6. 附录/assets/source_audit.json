@@ -1,0 +1,1884 @@
+{
+  "editorial_date": "2026-11-26",
+  "meaning": "HTTP response/title checks only; not feature, ownership, availability or scientific verification.",
+  "sources": [
+    {
+      "url": "https://a2a-protocol.org/latest/",
+      "checked_at": "2026-11-26T04:16:45.304988+00:00",
+      "status": 200,
+      "final_url": "https://a2a-protocol.org/latest/",
+      "http_date": "Thu, 26 Nov 2026 04:16:45 GMT",
+      "title": "A2A Protocol",
+      "access": "page-response"
+    },
+    {
+      "url": "https://ai-sdk.dev/docs",
+      "checked_at": "2026-11-26T04:16:45.305377+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "checked_at": "2026-11-26T04:16:45.305510+00:00",
+      "status": 200,
+      "final_url": "https://aistudio.google.com/docs",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "Docs - Gemini API | Google AI Studio",
+      "access": "page-response"
+    },
+    {
+      "url": "https://ai.pydantic.dev/",
+      "checked_at": "2026-11-26T04:16:45.305625+00:00",
+      "status": 200,
+      "final_url": "https://pydantic.dev/docs/ai/overview/",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "Pydantic AI | Pydantic Docs",
+      "access": "page-response"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/",
+      "checked_at": "2026-11-26T04:16:45.547832+00:00",
+      "status": 200,
+      "final_url": "https://api-docs.deepseek.com/",
+      "http_date": "Thu, 26 Nov 2026 04:16:45 GMT",
+      "title": "Your First API Call | DeepSeek API Docs",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arrow.apache.org/",
+      "checked_at": "2026-11-26T04:16:45.856491+00:00",
+      "status": 200,
+      "final_url": "https://arrow.apache.org/",
+      "http_date": "Thu, 26 Nov 2026 04:16:46 GMT",
+      "title": "Apache Arrow | Apache Arrow",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/1706.03762",
+      "checked_at": "2026-11-26T04:16:45.993447+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1706.03762",
+      "http_date": "Thu, 26 Nov 2026 04:16:46 GMT",
+      "title": "[1706.03762] Attention Is All You Need",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2001.08361",
+      "checked_at": "2026-11-26T04:16:46.241476+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2001.08361",
+      "http_date": "Thu, 26 Nov 2026 04:16:46 GMT",
+      "title": "[2001.08361] Scaling Laws for Neural Language Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2003.08934",
+      "checked_at": "2026-11-26T04:16:46.297946+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2003.08934",
+      "http_date": "Thu, 26 Nov 2026 04:16:46 GMT",
+      "title": "[2003.08934] NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2004.04906",
+      "checked_at": "2026-11-26T04:16:46.528120+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2004.04906",
+      "http_date": "Thu, 26 Nov 2026 04:16:46 GMT",
+      "title": "[2004.04906] Dense Passage Retrieval for Open-Domain Question Answering",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2004.12832",
+      "checked_at": "2026-11-26T04:16:46.537233+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2004.12832",
+      "http_date": "Thu, 26 Nov 2026 04:16:46 GMT",
+      "title": "[2004.12832] ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2005.11401",
+      "checked_at": "2026-11-26T04:16:46.838564+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2005.11401",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2005.11401] Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2005.14165",
+      "checked_at": "2026-11-26T04:16:46.845670+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2005.14165",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2005.14165] Language Models are Few-Shot Learners",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2006.11239",
+      "checked_at": "2026-11-26T04:16:47.068300+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2006.11239",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2006.11239] Denoising Diffusion Probabilistic Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2103.00020",
+      "checked_at": "2026-11-26T04:16:47.075790+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2103.00020",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2103.00020] Learning Transferable Visual Models From Natural Language Supervision",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.09685",
+      "checked_at": "2026-11-26T04:16:47.271840+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2106.09685",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2106.09685] LoRA: Low-Rank Adaptation of Large Language Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2112.10752",
+      "checked_at": "2026-11-26T04:16:47.282880+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2112.10752",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2112.10752] High-Resolution Image Synthesis with Latent Diffusion Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.02155",
+      "checked_at": "2026-11-26T04:16:47.390297+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2203.02155",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2203.02155] Training language models to follow instructions with human feedback",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.15556",
+      "checked_at": "2026-11-26T04:16:47.546043+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2203.15556",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2203.15556] Training Compute-Optimal Large Language Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2205.14135",
+      "checked_at": "2026-11-26T04:16:47.657102+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2205.14135",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2205.14135] FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.03629",
+      "checked_at": "2026-11-26T04:16:47.733593+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2210.03629",
+      "http_date": "Thu, 26 Nov 2026 04:16:47 GMT",
+      "title": "[2210.03629] ReAct: Synergizing Reasoning and Acting in Language Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2211.17192",
+      "checked_at": "2026-11-26T04:16:47.849557+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2211.17192",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2211.17192] Fast Inference from Transformers via Speculative Decoding",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2212.04356",
+      "checked_at": "2026-11-26T04:16:47.913001+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2212.04356",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2212.04356] Robust Speech Recognition via Large-Scale Weak Supervision",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2302.04761",
+      "checked_at": "2026-11-26T04:16:47.967062+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2302.04761",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2302.04761] Toolformer: Language Models Can Teach Themselves to Use Tools",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2302.13971",
+      "checked_at": "2026-11-26T04:16:48.112481+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2302.13971",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2302.13971] LLaMA: Open and Efficient Foundation Language Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2303.04137",
+      "checked_at": "2026-11-26T04:16:48.173475+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2303.04137",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2303.04137] Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2303.11366",
+      "checked_at": "2026-11-26T04:16:48.213079+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2303.11366",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2303.11366] Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2304.13705",
+      "checked_at": "2026-11-26T04:16:48.411292+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2304.13705",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2304.13705] Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.14314",
+      "checked_at": "2026-11-26T04:16:48.503962+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2305.14314",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.18290",
+      "checked_at": "2026-11-26T04:16:48.511519+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2305.18290",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2305.18290] Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2307.08691",
+      "checked_at": "2026-11-26T04:16:48.537506+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2307.08691",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2307.08691] FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2307.13854",
+      "checked_at": "2026-11-26T04:16:48.662606+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2307.13854",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2307.13854] WebArena: A Realistic Web Environment for Building Autonomous Agents",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2307.15818",
+      "checked_at": "2026-11-26T04:16:48.751828+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2307.15818",
+      "http_date": "Thu, 26 Nov 2026 04:16:48 GMT",
+      "title": "[2307.15818] RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2308.04079",
+      "checked_at": "2026-11-26T04:16:48.771753+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2308.04079",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2308.04079] 3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2309.06180",
+      "checked_at": "2026-11-26T04:16:48.801624+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2309.06180",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2309.06180] Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.06770",
+      "checked_at": "2026-11-26T04:16:48.932890+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2310.06770",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2310.06770] SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2312.00752",
+      "checked_at": "2026-11-26T04:16:48.972471+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2312.00752",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2312.00752] Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2312.07104",
+      "checked_at": "2026-11-26T04:16:49.090075+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2312.07104",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2312.07104] SGLang: Efficient Execution of Structured Language Model Programs",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.09670",
+      "checked_at": "2026-11-26T04:16:49.110581+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2401.09670",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2401.09670] DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2402.03300",
+      "checked_at": "2026-11-26T04:16:49.159674+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2402.03300",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2402.03300] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.07972",
+      "checked_at": "2026-11-26T04:16:49.261327+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2404.07972",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2404.07972] OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.16130",
+      "checked_at": "2026-11-26T04:16:49.350564+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2404.16130",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2404.16130] From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.09246",
+      "checked_at": "2026-11-26T04:16:49.411622+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2406.09246",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2406.09246] OpenVLA: An Open-Source Vision-Language-Action Model",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.12045",
+      "checked_at": "2026-11-26T04:16:49.471820+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2406.12045",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2406.12045] $τ$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2409.19256",
+      "checked_at": "2026-11-26T04:16:49.549742+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2409.19256",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2409.19256] HybridFlow: A Flexible and Efficient RLHF Framework",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2412.19437",
+      "checked_at": "2026-11-26T04:16:49.672744+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2412.19437",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2412.19437] DeepSeek-V3 Technical Report",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2501.12948",
+      "checked_at": "2026-11-26T04:16:49.706270+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2501.12948",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2501.12948] DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.20006",
+      "checked_at": "2026-11-26T04:16:49.726818+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2604.20006",
+      "http_date": "Thu, 26 Nov 2026 04:16:50 GMT",
+      "title": "[2604.20006] From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.20833",
+      "checked_at": "2026-11-26T04:16:49.754357+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2605.20833",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "[2605.20833] MemGym: a Long-Horizon Memory Environment for LLM Agents",
+      "access": "page-response"
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.24468",
+      "checked_at": "2026-11-26T04:16:49.925751+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2605.24468",
+      "http_date": "Thu, 26 Nov 2026 04:16:50 GMT",
+      "title": "[2605.24468] SAM: State-Adaptive Memory for Long-Horizon Reasoning Agent",
+      "access": "page-response"
+    },
+    {
+      "url": "https://auto.gluon.ai/",
+      "checked_at": "2026-11-26T04:16:49.983977+00:00",
+      "status": 200,
+      "final_url": "https://auto.gluon.ai/",
+      "http_date": "Thu, 26 Nov 2026 03:34:00 GMT",
+      "title": "AutoGluon: AutoML for Text, Image, Time Series, and Tabular Data — AutoGluon Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://aws.amazon.com/bedrock/",
+      "checked_at": "2026-11-26T04:16:50.027964+00:00",
+      "status": 200,
+      "final_url": "https://aws.amazon.com/bedrock/",
+      "http_date": "Thu, 26 Nov 2026 04:16:50 GMT",
+      "title": "Amazon Bedrock – Build genAI applications and agents at production scale – AWS",
+      "access": "page-response"
+    },
+    {
+      "url": "https://aws.amazon.com/sagemaker/",
+      "checked_at": "2026-11-26T04:16:50.065071+00:00",
+      "status": 200,
+      "final_url": "https://aws.amazon.com/sagemaker/",
+      "http_date": "Thu, 26 Nov 2026 04:16:50 GMT",
+      "title": "The center for all your data, analytics, and AI – Amazon SageMaker – AWS",
+      "access": "page-response"
+    },
+    {
+      "url": "https://azure.microsoft.com/en-us/solutions/ai",
+      "checked_at": "2026-11-26T04:16:50.261612+00:00",
+      "status": 200,
+      "final_url": "https://azure.microsoft.com/en-us/solutions/ai",
+      "http_date": "Thu, 26 Nov 2026 04:17:00 GMT",
+      "title": "Azure AI Apps and Agents | Microsoft Azure",
+      "access": "page-response"
+    },
+    {
+      "url": "https://bailian.console.aliyun.com/",
+      "checked_at": "2026-11-26T04:16:50.709255+00:00",
+      "status": 200,
+      "final_url": "https://bailian.console.aliyun.com/",
+      "http_date": "Thu, 26 Nov 2026 04:16:51 GMT",
+      "title": "大模型服务平台百炼控制台",
+      "access": "page-response"
+    },
+    {
+      "url": "https://blogs.nvidia.cn/blog/rubin-platform-ai-supercomputer/",
+      "checked_at": "2026-11-26T04:16:50.788088+00:00",
+      "status": 200,
+      "final_url": "https://blogs.nvidia.cn/blog/rubin-platform-ai-supercomputer/",
+      "http_date": "Thu, 26 Nov 2026 04:16:51 GMT",
+      "title": "NVIDIA 发布 Rubin，开启新一代 AI 平台——六款全新芯片，一台超凡 AI 超级计算机 | NVIDIA 英伟达博客",
+      "access": "page-response"
+    },
+    {
+      "url": "https://bolt.new/",
+      "checked_at": "2026-11-26T04:16:51.358727+00:00",
+      "status": 200,
+      "final_url": "https://bolt.new/",
+      "http_date": "Thu, 26 Nov 2026 04:16:52 GMT",
+      "title": "Bolt AI builder: Websites, apps & prototypes",
+      "access": "page-response"
+    },
+    {
+      "url": "https://chat.qwen.ai/",
+      "checked_at": "2026-11-26T04:16:51.591324+00:00",
+      "status": 200,
+      "final_url": "https://chat.qwen.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:16:52 GMT",
+      "title": "Qwen",
+      "access": "page-response"
+    },
+    {
+      "url": "https://chatgpt.com/",
+      "checked_at": "2026-11-26T04:16:52.700870+00:00",
+      "status": 200,
+      "final_url": "https://chatgpt.com/",
+      "http_date": "Thu, 26 Nov 2026 04:16:53 GMT",
+      "title": "ChatGPT",
+      "access": "page-response"
+    },
+    {
+      "url": "https://claude.ai/",
+      "checked_at": "2026-11-26T04:16:52.928955+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://cloud.baidu.com/product/wenxinworkshop",
+      "checked_at": "2026-11-26T04:16:53.359777+00:00",
+      "status": 200,
+      "final_url": "https://cloud.baidu.com/product/qianfan.html",
+      "http_date": "Thu, 26 Nov 2026 04:16:54 GMT",
+      "title": "百度千帆-百度智能云",
+      "access": "page-response"
+    },
+    {
+      "url": "https://cloud.google.com/vertex-ai",
+      "checked_at": "2026-11-26T04:16:53.899874+00:00",
+      "status": 200,
+      "final_url": "https://cloud.google.com/products/gemini-enterprise-agent-platform",
+      "http_date": "Thu, 26 Nov 2026 04:16:56 GMT",
+      "title": "Gemini platform | Google Cloud",
+      "access": "page-response"
+    },
+    {
+      "url": "https://cloud.tencent.com/product/tione",
+      "checked_at": "2026-11-26T04:16:54.464884+00:00",
+      "status": 200,
+      "final_url": "https://cloud.tencent.com/product/tione",
+      "http_date": "Thu, 26 Nov 2026 04:16:54 GMT",
+      "title": "腾讯云大模型训推平台TI-ONE_AI模型训推_AI开发平台-腾讯云",
+      "access": "page-response"
+    },
+    {
+      "url": "https://cohere.com/",
+      "checked_at": "2026-11-26T04:16:54.729652+00:00",
+      "status": 200,
+      "final_url": "https://cohere.com/",
+      "http_date": "Thu, 26 Nov 2026 04:16:55 GMT",
+      "title": "Enterprise AI: Private, Secure, Customizable | Cohere",
+      "access": "page-response"
+    },
+    {
+      "url": "https://colmap.github.io/",
+      "checked_at": "2026-11-26T04:16:54.890390+00:00",
+      "status": 200,
+      "final_url": "https://colmap.github.io/",
+      "http_date": "Thu, 26 Nov 2026 04:16:55 GMT",
+      "title": "Structure-from-Motion and Multi-View Stereo — COLMAP",
+      "access": "page-response"
+    },
+    {
+      "url": "https://consensus.app/",
+      "checked_at": "2026-11-26T04:16:55.466285+00:00",
+      "status": 200,
+      "final_url": "https://consensus.app/",
+      "http_date": "Thu, 26 Nov 2026 04:16:56 GMT",
+      "title": "Consensus: AI for Research",
+      "access": "page-response"
+    },
+    {
+      "url": "https://console.groq.com/",
+      "checked_at": "2026-11-26T04:16:56.265127+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://cursor.com/",
+      "checked_at": "2026-11-26T04:16:56.467661+00:00",
+      "status": 200,
+      "final_url": "https://cursor.com/",
+      "http_date": "Thu, 26 Nov 2026 04:16:56 GMT",
+      "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+      "access": "page-response"
+    },
+    {
+      "url": "https://deepchem.io/",
+      "checked_at": "2026-11-26T04:16:56.705893+00:00",
+      "status": 200,
+      "final_url": "https://deepchem.io/",
+      "http_date": "Thu, 26 Nov 2026 04:16:59 GMT",
+      "title": "DeepChem",
+      "access": "page-response"
+    },
+    {
+      "url": "https://deepeval.com/docs/getting-started",
+      "checked_at": "2026-11-26T04:26:13.102512+00:00",
+      "status": 200,
+      "final_url": "https://deepeval.com/docs/getting-started",
+      "http_date": "Thu, 26 Nov 2026 04:26:13 GMT",
+      "title": "DeepEval 5-min Quickstart | DeepEval - The LLM Evaluation Framework",
+      "access": "page-response"
+    },
+    {
+      "url": "https://developers.google.com/optimization",
+      "checked_at": "2026-11-26T04:16:57.061004+00:00",
+      "status": 200,
+      "final_url": "https://developers.google.com/optimization",
+      "http_date": "Thu, 26 Nov 2026 04:16:58 GMT",
+      "title": "OR-Tools  |  Google for Developers",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.ag-ui.com/introduction",
+      "checked_at": "2026-11-26T04:16:57.933585+00:00",
+      "status": 200,
+      "final_url": "https://docs.ag-ui.com/introduction",
+      "http_date": "Thu, 26 Nov 2026 04:17:00 GMT",
+      "title": "AG-UI Overview - Agent User Interaction Protocol",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.anthropic.com/",
+      "checked_at": "2026-11-26T04:16:58.826812+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://docs.anythingllm.com/",
+      "checked_at": "2026-11-26T04:16:59.303479+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://docs.arize.com/phoenix",
+      "checked_at": "2026-11-26T04:16:59.799103+00:00",
+      "status": 200,
+      "final_url": "https://arize.com/docs/phoenix",
+      "http_date": "Thu, 26 Nov 2026 04:17:02 GMT",
+      "title": "What is Arize Phoenix? - Phoenix",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.dify.ai/",
+      "checked_at": "2026-11-26T04:17:00.537793+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://docs.flowiseai.com/",
+      "checked_at": "2026-11-26T04:17:01.051220+00:00",
+      "status": 200,
+      "final_url": "https://docs.flowiseai.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:01 GMT",
+      "title": "Introduction | FlowiseAI",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.haystack.deepset.ai/",
+      "checked_at": "2026-11-26T04:17:01.359093+00:00",
+      "status": 200,
+      "final_url": "https://docs.haystack.deepset.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:05 GMT",
+      "title": "Haystack Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.jax.dev/",
+      "checked_at": "2026-11-26T04:17:01.708683+00:00",
+      "status": 200,
+      "final_url": "https://docs.jax.dev/en/latest/",
+      "http_date": "Thu, 26 Nov 2026 04:17:03 GMT",
+      "title": "JAX: High performance array computing — JAX documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+      "checked_at": "2026-11-26T04:17:02.560945+00:00",
+      "status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/overview",
+      "http_date": "Thu, 26 Nov 2026 04:17:02 GMT",
+      "title": "LangGraph overview - Docs by LangChain",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.langflow.org/",
+      "checked_at": "2026-11-26T04:17:02.946205+00:00",
+      "status": 200,
+      "final_url": "https://docs.langflow.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:03 GMT",
+      "title": "What is Langflow? | Langflow Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.livekit.io/agents/",
+      "checked_at": "2026-11-26T04:17:03.638288+00:00",
+      "status": 200,
+      "final_url": "https://docs.livekit.io/agents/",
+      "http_date": "Thu, 26 Nov 2026 04:17:04 GMT",
+      "title": "Introduction | LiveKit Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.llamaindex.ai/",
+      "checked_at": "2026-11-26T04:17:03.808969+00:00",
+      "status": 200,
+      "final_url": "https://developers.llamaindex.ai/python/framework/",
+      "http_date": "Thu, 26 Nov 2026 04:17:10 GMT",
+      "title": "LlamaIndex Framework, by the makers of LlamaParse | Developer Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.n8n.io/",
+      "checked_at": "2026-11-26T04:17:03.922036+00:00",
+      "status": 200,
+      "final_url": "https://docs.n8n.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:04 GMT",
+      "title": "n8n Docs",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.nerf.studio/",
+      "checked_at": "2026-11-26T04:17:04.618663+00:00",
+      "status": 200,
+      "final_url": "https://docs.nerf.studio/",
+      "http_date": "Thu, 26 Nov 2026 04:17:05 GMT",
+      "title": "nerfstudio",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.openhands.dev/",
+      "checked_at": "2026-11-26T04:17:04.669651+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://docs.openwebui.com/",
+      "checked_at": "2026-11-26T04:17:05.120751+00:00",
+      "status": 200,
+      "final_url": "https://docs.openwebui.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:05 GMT",
+      "title": "Home / Open WebUI",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.pipecat.ai/",
+      "checked_at": "2026-11-26T04:17:05.883686+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://docs.pola.rs/",
+      "checked_at": "2026-11-26T04:17:05.895459+00:00",
+      "status": 200,
+      "final_url": "https://docs.pola.rs/",
+      "http_date": "Thu, 26 Nov 2026 04:17:07 GMT",
+      "title": "Index - Polars user guide",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/distributed.html",
+      "checked_at": "2026-11-26T04:17:06.047653+00:00",
+      "status": 200,
+      "final_url": "https://docs.pytorch.org/docs/stable/distributed.html",
+      "http_date": "Thu, 26 Nov 2026 04:17:07 GMT",
+      "title": "Redirecting…",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.ragas.io/",
+      "checked_at": "2026-11-26T04:17:07.173015+00:00",
+      "status": 200,
+      "final_url": "https://docs.ragas.io/en/stable/",
+      "http_date": "Thu, 26 Nov 2026 04:17:10 GMT",
+      "title": "Ragas",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.ray.io/en/latest/cluster/kubernetes/index.html",
+      "checked_at": "2026-11-26T04:17:07.699887+00:00",
+      "status": 200,
+      "final_url": "https://docs.ray.io/en/latest/cluster/kubernetes/index.html",
+      "http_date": "Thu, 26 Nov 2026 04:17:10 GMT",
+      "title": "Ray on Kubernetes — Ray 2.60.1",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.ray.io/en/latest/train/train.html",
+      "checked_at": "2026-11-26T04:17:09.123842+00:00",
+      "status": 200,
+      "final_url": "https://docs.ray.io/en/latest/train/train.html",
+      "http_date": "Thu, 26 Nov 2026 04:17:10 GMT",
+      "title": "Ray Train: Scalable Model Training — Ray 2.60.1",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.ros.org/",
+      "checked_at": "2026-11-26T04:17:10.188967+00:00",
+      "status": 200,
+      "final_url": "https://docs.ros.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:12 GMT",
+      "title": "Making sure you're not a bot!",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.sglang.io/",
+      "checked_at": "2026-11-26T04:17:10.472974+00:00",
+      "status": 200,
+      "final_url": "https://docs.sglang.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:13 GMT",
+      "title": "Welcome to SGLang - SGLang Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.streamlit.io/",
+      "checked_at": "2026-11-26T04:17:10.736816+00:00",
+      "status": 200,
+      "final_url": "https://docs.streamlit.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:14 GMT",
+      "title": "Streamlit documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.temporal.io/",
+      "checked_at": "2026-11-26T04:17:10.744965+00:00",
+      "status": 200,
+      "final_url": "https://docs.temporal.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:13 GMT",
+      "title": "Temporal Platform Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.ultralytics.com/",
+      "checked_at": "2026-11-26T04:17:12.236518+00:00",
+      "status": 200,
+      "final_url": "https://docs.ultralytics.com/",
+      "http_date": "Wed, 25 Nov 2026 23:44:53 GMT",
+      "title": "YOLO Object Detection & Segmentation | Ultralytics",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.vllm.ai/en/latest/",
+      "checked_at": "2026-11-26T04:17:13.338595+00:00",
+      "status": 200,
+      "final_url": "https://docs.vllm.ai/en/latest/",
+      "http_date": "Thu, 26 Nov 2026 04:17:13 GMT",
+      "title": "vLLM",
+      "access": "page-response"
+    },
+    {
+      "url": "https://docs.x.ai/",
+      "checked_at": "2026-11-26T04:17:13.896157+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://duckdb.org/docs/",
+      "checked_at": "2026-11-26T04:17:14.036857+00:00",
+      "status": 200,
+      "final_url": "https://duckdb.org/docs/",
+      "http_date": "Thu, 26 Nov 2026 04:17:14 GMT",
+      "title": "Redirecting…",
+      "access": "page-response"
+    },
+    {
+      "url": "https://elevenlabs.io/",
+      "checked_at": "2026-11-26T04:17:14.229344+00:00",
+      "status": 200,
+      "final_url": "https://elevenlabs.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:14 GMT",
+      "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "access": "page-response"
+    },
+    {
+      "url": "https://elicit.com/",
+      "checked_at": "2026-11-26T04:17:14.362452+00:00",
+      "status": 200,
+      "final_url": "https://elicit.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:14 GMT",
+      "title": "Elicit: AI for research & decision-making",
+      "access": "page-response"
+    },
+    {
+      "url": "https://fin.ai/",
+      "checked_at": "2026-11-26T04:17:14.704024+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://fireflies.ai/",
+      "checked_at": "2026-11-26T04:17:14.968585+00:00",
+      "status": 200,
+      "final_url": "https://fireflies.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:15 GMT",
+      "title": "Fireflies.ai | AI Teammate to transcribe, summarize, analyze meetings, Real time AI note taker",
+      "access": "page-response"
+    },
+    {
+      "url": "https://fireworks.ai/",
+      "checked_at": "2026-11-26T04:17:15.019231+00:00",
+      "status": 200,
+      "final_url": "https://fireworks.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:15 GMT",
+      "title": "Own your specialized intelligence | Fireworks",
+      "access": "page-response"
+    },
+    {
+      "url": "https://flower.ai/",
+      "checked_at": "2026-11-26T04:17:15.471161+00:00",
+      "status": 200,
+      "final_url": "https://flower.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:17 GMT",
+      "title": "Flower: Advance Collaborative Superintelligence",
+      "access": "page-response"
+    },
+    {
+      "url": "https://gamma.app/",
+      "checked_at": "2026-11-26T04:17:15.844728+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://gemini.google.com/",
+      "checked_at": "2026-11-26T04:17:15.901387+00:00",
+      "status": 200,
+      "final_url": "https://gemini.google.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:16 GMT",
+      "title": null,
+      "access": "page-response"
+    },
+    {
+      "url": "https://google.github.io/adk-docs/",
+      "checked_at": "2026-11-26T04:17:16.066376+00:00",
+      "status": 200,
+      "final_url": "https://adk.dev/",
+      "http_date": "Thu, 26 Nov 2026 04:17:18 GMT",
+      "title": "Agent Development Kit (ADK) - Agent Development Kit (ADK)",
+      "access": "page-response"
+    },
+    {
+      "url": "https://gymnasium.farama.org/",
+      "checked_at": "2026-11-26T04:17:16.147795+00:00",
+      "status": 200,
+      "final_url": "https://gymnasium.farama.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:17 GMT",
+      "title": "Gymnasium Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://hailuoai.video/",
+      "checked_at": "2026-11-26T04:17:17.659817+00:00",
+      "status": 200,
+      "final_url": "https://hailuoai.video/",
+      "http_date": "Thu, 26 Nov 2026 04:17:21 GMT",
+      "title": "Hailuo AI: MiniMax H3 LIVE NOW. Top-Tier Quality, Versatile References",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/",
+      "checked_at": "2026-11-26T04:17:18.025155+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/",
+      "http_date": "Thu, 26 Nov 2026 04:16:49 GMT",
+      "title": "Hugging Face – The AI community building the future.",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/Qwen",
+      "checked_at": "2026-11-26T04:17:18.065756+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/Qwen",
+      "http_date": "Thu, 26 Nov 2026 04:17:18 GMT",
+      "title": "Qwen (Qwen)",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/deepseek-ai",
+      "checked_at": "2026-11-26T04:17:18.094829+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/deepseek-ai",
+      "http_date": "Thu, 26 Nov 2026 04:17:18 GMT",
+      "title": "deepseek-ai (DeepSeek)",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/docs/datasets/",
+      "checked_at": "2026-11-26T04:17:18.450516+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/datasets/index",
+      "http_date": "Thu, 26 Nov 2026 04:17:20 GMT",
+      "title": "Datasets · Hugging Face",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/docs/diffusers/",
+      "checked_at": "2026-11-26T04:17:18.881192+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/diffusers/index",
+      "http_date": "Thu, 26 Nov 2026 04:17:20 GMT",
+      "title": "Diffusers · Hugging Face",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/docs/safetensors/",
+      "checked_at": "2026-11-26T04:17:19.384867+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/safetensors/index",
+      "http_date": "Thu, 26 Nov 2026 04:17:21 GMT",
+      "title": "Safetensors · Hugging Face",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/docs/tokenizers/",
+      "checked_at": "2026-11-26T04:17:20.440528+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/tokenizers/index",
+      "http_date": "Thu, 26 Nov 2026 04:17:21 GMT",
+      "title": "Tokenizers · Hugging Face",
+      "access": "page-response"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/",
+      "checked_at": "2026-11-26T04:17:20.792975+00:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/docs/transformers/index",
+      "http_date": "Thu, 26 Nov 2026 04:17:22 GMT",
+      "title": "Transformers · Hugging Face",
+      "access": "page-response"
+    },
+    {
+      "url": "https://hunyuan.tencent.com/",
+      "checked_at": "2026-11-26T04:17:21.316687+00:00",
+      "status": 200,
+      "final_url": "https://hunyuan.tencent.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:21 GMT",
+      "title": "腾讯混元",
+      "access": "page-response"
+    },
+    {
+      "url": "https://iceberg.apache.org/",
+      "checked_at": "2026-11-26T04:17:21.595292+00:00",
+      "status": 200,
+      "final_url": "https://iceberg.apache.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:22 GMT",
+      "title": "Apache Iceberg - Apache Iceberg™",
+      "access": "page-response"
+    },
+    {
+      "url": "https://jan.ai/",
+      "checked_at": "2026-11-26T04:17:21.943591+00:00",
+      "status": null,
+      "access": "unavailable",
+      "error": "<urlopen error [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1129)>"
+    },
+    {
+      "url": "https://jimeng.jianying.com/",
+      "checked_at": "2026-11-26T04:17:21.952629+00:00",
+      "status": 200,
+      "final_url": "https://jimeng.jianying.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:22 GMT",
+      "title": "即梦AI - 即刻造梦",
+      "access": "page-response"
+    },
+    {
+      "url": "https://klingai.com/",
+      "checked_at": "2026-11-26T04:17:22.114662+00:00",
+      "status": 200,
+      "final_url": "https://klingai.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:22 GMT",
+      "title": "可灵AI - AI创意生产力平台",
+      "access": "page-response"
+    },
+    {
+      "url": "https://kubernetes.io/docs/",
+      "checked_at": "2026-11-26T04:17:22.466926+00:00",
+      "status": 200,
+      "final_url": "https://kubernetes.io/docs/home/",
+      "http_date": "Thu, 26 Nov 2026 04:17:23 GMT",
+      "title": "Kubernetes Documentation | Kubernetes",
+      "access": "page-response"
+    },
+    {
+      "url": "https://kueue.sigs.k8s.io/docs/overview/",
+      "checked_at": "2026-11-26T04:17:22.835338+00:00",
+      "status": 200,
+      "final_url": "https://kueue.sigs.k8s.io/docs/overview/",
+      "http_date": "Thu, 26 Nov 2026 04:17:24 GMT",
+      "title": "Overview | Kueue",
+      "access": "page-response"
+    },
+    {
+      "url": "https://labelstud.io/",
+      "checked_at": "2026-11-26T04:17:22.877296+00:00",
+      "status": 200,
+      "final_url": "https://labelstud.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:25 GMT",
+      "title": "Open Source Data Labeling and AI Evaluation | Label Studio",
+      "access": "page-response"
+    },
+    {
+      "url": "https://lambda.ai/",
+      "checked_at": "2026-11-26T04:17:23.555001+00:00",
+      "status": 200,
+      "final_url": "https://lambda.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:24 GMT",
+      "title": "AI compute in the cloud | Lambda",
+      "access": "page-response"
+    },
+    {
+      "url": "https://langfuse.com/docs",
+      "checked_at": "2026-11-26T04:17:24.440229+00:00",
+      "status": 200,
+      "final_url": "https://langfuse.com/docs",
+      "http_date": "Thu, 26 Nov 2026 01:20:16 GMT",
+      "title": "Open Source AI Engineering Platform - Langfuse",
+      "access": "page-response"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+      "checked_at": "2026-11-26T04:17:24.449207+00:00",
+      "status": 200,
+      "final_url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+      "http_date": "Thu, 26 Nov 2026 04:17:25 GMT",
+      "title": "Microsoft Agent Framework Overview | Microsoft Learn",
+      "access": "page-response"
+    },
+    {
+      "url": "https://llvm.org/",
+      "checked_at": "2026-11-26T04:17:24.887376+00:00",
+      "status": 200,
+      "final_url": "https://llvm.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:25 GMT",
+      "title": "The LLVM Compiler Infrastructure Project",
+      "access": "page-response"
+    },
+    {
+      "url": "https://lovable.dev/",
+      "checked_at": "2026-11-26T04:17:25.499000+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://lumalabs.ai/",
+      "checked_at": "2026-11-26T04:17:25.745998+00:00",
+      "status": 200,
+      "final_url": "https://lumalabs.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:26 GMT",
+      "title": "Luma | AI Agents for Creative Work",
+      "access": "page-response"
+    },
+    {
+      "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "checked_at": "2026-11-26T04:17:25.920196+00:00",
+      "status": 200,
+      "final_url": "https://metr.org/blog/2026-02-24-uplift-update/",
+      "http_date": "Thu, 26 Nov 2026 04:17:26 GMT",
+      "title": "We are Changing our Developer Productivity Experiment Design - METR",
+      "access": "page-response"
+    },
+    {
+      "url": "https://milvus.io/docs",
+      "checked_at": "2026-11-26T04:17:25.987697+00:00",
+      "status": 200,
+      "final_url": "https://milvus.io/docs",
+      "http_date": "Thu, 26 Nov 2026 04:17:28 GMT",
+      "title": "Milvus vector database documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://mistral.ai/",
+      "checked_at": "2026-11-26T04:17:26.984539+00:00",
+      "status": 200,
+      "final_url": "https://mistral.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:27 GMT",
+      "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
+      "access": "page-response"
+    },
+    {
+      "url": "https://mlflow.org/docs/latest/",
+      "checked_at": "2026-11-26T04:17:27.071650+00:00",
+      "status": 200,
+      "final_url": "https://mlflow.org/docs/latest/",
+      "http_date": "Wed, 25 Nov 2026 07:36:34 GMT",
+      "title": "MLflow Documentation | MLflow AI Platform",
+      "access": "page-response"
+    },
+    {
+      "url": "https://modal.com/",
+      "checked_at": "2026-11-26T04:17:27.659544+00:00",
+      "status": 200,
+      "final_url": "https://modal.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:29 GMT",
+      "title": "Modal: The platform for production AI",
+      "access": "page-response"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/latest",
+      "checked_at": "2026-11-26T04:17:28.372676+00:00",
+      "status": 200,
+      "final_url": "https://modelcontextprotocol.io/specification/2026-07-28",
+      "http_date": "Thu, 26 Nov 2026 04:17:28 GMT",
+      "title": "Specification - Model Context Protocol",
+      "access": "page-response"
+    },
+    {
+      "url": "https://modelcontextprotocol.io/specification/latest/basic/authorization",
+      "checked_at": "2026-11-26T04:17:29.035457+00:00",
+      "status": 200,
+      "final_url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+      "http_date": "Thu, 26 Nov 2026 04:17:29 GMT",
+      "title": "Authorization - Model Context Protocol",
+      "access": "page-response"
+    },
+    {
+      "url": "https://modelscope.cn/",
+      "checked_at": "2026-11-26T04:17:29.482898+00:00",
+      "status": 200,
+      "final_url": "https://modelscope.cn/home",
+      "http_date": "Thu, 26 Nov 2026 04:17:30 GMT",
+      "title": "首页 - ModelScope 魔搭社区",
+      "access": "page-response"
+    },
+    {
+      "url": "https://monai.io/",
+      "checked_at": "2026-11-26T04:17:29.647698+00:00",
+      "status": 200,
+      "final_url": "https://monai.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:31 GMT",
+      "title": null,
+      "access": "page-response"
+    },
+    {
+      "url": "https://mujoco.org/",
+      "checked_at": "2026-11-26T04:17:30.457570+00:00",
+      "status": 200,
+      "final_url": "https://mujoco.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:31 GMT",
+      "title": null,
+      "access": "page-response"
+    },
+    {
+      "url": "https://notebooklm.google/",
+      "checked_at": "2026-11-26T04:17:30.502790+00:00",
+      "status": 200,
+      "final_url": "https://notebook.google/",
+      "http_date": "Thu, 26 Nov 2026 04:17:33 GMT",
+      "title": "Gemini Notebook | AI Research Tool & Thinking Partner",
+      "access": "page-response"
+    },
+    {
+      "url": "https://opacus.ai/",
+      "checked_at": "2026-11-26T04:17:31.027128+00:00",
+      "status": 200,
+      "final_url": "https://opacus.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:32 GMT",
+      "title": "Opacus · Train PyTorch models with Differential Privacy",
+      "access": "page-response"
+    },
+    {
+      "url": "https://open.bigmodel.cn/",
+      "checked_at": "2026-11-26T04:17:31.752989+00:00",
+      "status": 200,
+      "final_url": "https://open.bigmodel.cn/",
+      "http_date": "Thu, 26 Nov 2026 04:17:32 GMT",
+      "title": "智谱丨BigModel 平台",
+      "access": "page-response"
+    },
+    {
+      "url": "https://openai.github.io/openai-agents-python/",
+      "checked_at": "2026-11-26T04:17:31.972876+00:00",
+      "status": 200,
+      "final_url": "https://openai.github.io/openai-agents-python/",
+      "http_date": "Thu, 26 Nov 2026 04:17:32 GMT",
+      "title": "OpenAI Agents SDK",
+      "access": "page-response"
+    },
+    {
+      "url": "https://opencv.org/",
+      "checked_at": "2026-11-26T04:17:32.005303+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://opentelemetry.io/docs/",
+      "checked_at": "2026-11-26T04:17:32.095757+00:00",
+      "status": 200,
+      "final_url": "https://opentelemetry.io/docs/",
+      "http_date": "Thu, 26 Nov 2026 04:17:32 GMT",
+      "title": "Documentation | OpenTelemetry",
+      "access": "page-response"
+    },
+    {
+      "url": "https://openxla.org/",
+      "checked_at": "2026-11-26T04:17:32.540733+00:00",
+      "status": 200,
+      "final_url": "https://openxla.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:33 GMT",
+      "title": "OpenXLA Project",
+      "access": "page-response"
+    },
+    {
+      "url": "https://optuna.org/",
+      "checked_at": "2026-11-26T04:17:32.579605+00:00",
+      "status": 200,
+      "final_url": "https://optuna.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:35 GMT",
+      "title": "Optuna - A hyperparameter optimization framework",
+      "access": "page-response"
+    },
+    {
+      "url": "https://otter.ai/",
+      "checked_at": "2026-11-26T04:17:32.888669+00:00",
+      "status": 200,
+      "final_url": "https://otter.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:34 GMT",
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "access": "page-response"
+    },
+    {
+      "url": "https://pika.art/",
+      "checked_at": "2026-11-26T04:17:33.844831+00:00",
+      "status": 200,
+      "final_url": "https://pika.art/",
+      "http_date": "Thu, 26 Nov 2026 02:41:59 GMT",
+      "title": "Pika: AI Creative Tools for Video, Image & Audio",
+      "access": "page-response"
+    },
+    {
+      "url": "https://platform.minimaxi.com/",
+      "checked_at": "2026-11-26T04:17:34.023362+00:00",
+      "status": 307,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 307: Temporary Redirect"
+    },
+    {
+      "url": "https://platform.moonshot.cn/",
+      "checked_at": "2026-11-26T04:17:34.766913+00:00",
+      "status": 200,
+      "final_url": "https://platform.kimi.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:35 GMT",
+      "title": "Kimi API 开放平台",
+      "access": "page-response"
+    },
+    {
+      "url": "https://platform.openai.com/docs/",
+      "checked_at": "2026-11-26T04:17:34.910256+00:00",
+      "status": 200,
+      "final_url": "https://developers.openai.com/api/docs",
+      "http_date": "Thu, 26 Nov 2026 04:17:37 GMT",
+      "title": "OpenAI API Platform Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://playwright.dev/",
+      "checked_at": "2026-11-26T04:17:35.295380+00:00",
+      "status": 200,
+      "final_url": "https://playwright.dev/",
+      "http_date": "Thu, 26 Nov 2026 04:17:35 GMT",
+      "title": "Fast and reliable end-to-end testing for modern web apps | Playwright",
+      "access": "page-response"
+    },
+    {
+      "url": "https://pyg.org/",
+      "checked_at": "2026-11-26T04:17:35.373495+00:00",
+      "status": null,
+      "access": "unavailable",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pyg.org'. (_ssl.c:1129)>"
+    },
+    {
+      "url": "https://qdrant.tech/documentation/",
+      "checked_at": "2026-11-26T04:17:35.577554+00:00",
+      "status": 200,
+      "final_url": "https://qdrant.tech/documentation/",
+      "http_date": "Thu, 26 Nov 2026 04:17:35 GMT",
+      "title": "Documentation - Qdrant",
+      "access": "page-response"
+    },
+    {
+      "url": "https://replicate.com/",
+      "checked_at": "2026-11-26T04:17:36.026176+00:00",
+      "status": 200,
+      "final_url": "https://replicate.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:37 GMT",
+      "title": "Replicate - Run AI with an API",
+      "access": "page-response"
+    },
+    {
+      "url": "https://replit.com/",
+      "checked_at": "2026-11-26T04:17:36.033623+00:00",
+      "status": 200,
+      "final_url": "https://replit.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:36 GMT",
+      "title": "Transform your business and become a Self-Driving Company | Replit",
+      "access": "page-response"
+    },
+    {
+      "url": "https://rocm.docs.amd.com/",
+      "checked_at": "2026-11-26T04:17:36.801951+00:00",
+      "status": 200,
+      "final_url": "https://rocm.docs.amd.com/en/latest/",
+      "http_date": "Thu, 26 Nov 2026 04:17:37 GMT",
+      "title": "AMD ROCm — AMD ROCm 10.2.0",
+      "access": "page-response"
+    },
+    {
+      "url": "https://runwayml.com/",
+      "checked_at": "2026-11-26T04:17:36.817290+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://scanpy.readthedocs.io/",
+      "checked_at": "2026-11-26T04:17:37.091900+00:00",
+      "status": 200,
+      "final_url": "https://scanpy.scverse.org/en/stable/",
+      "http_date": "Thu, 26 Nov 2026 04:17:39 GMT",
+      "title": "Scanpy – Single-Cell Analysis in Python — scanpy",
+      "access": "page-response"
+    },
+    {
+      "url": "https://scikit-learn.org/",
+      "checked_at": "2026-11-26T04:17:37.953148+00:00",
+      "status": 200,
+      "final_url": "https://scikit-learn.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:38 GMT",
+      "title": "scikit-learn: machine learning in Python — scikit-learn 0.16.1 documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://slack.com/features/ai",
+      "checked_at": "2026-11-26T04:17:37.991141+00:00",
+      "status": 200,
+      "final_url": "https://slack.com/intl/en-sg/features/ai",
+      "http_date": "Thu, 26 Nov 2026 04:17:39 GMT",
+      "title": "Slack AI features & AI assistants | Slack",
+      "access": "page-response"
+    },
+    {
+      "url": "https://slurm.schedmd.com/documentation.html",
+      "checked_at": "2026-11-26T04:17:38.752820+00:00",
+      "status": 200,
+      "final_url": "https://slurm.schedmd.com/documentation.html",
+      "http_date": "Thu, 26 Nov 2026 04:17:40 GMT",
+      "title": "Slurm Workload Manager - Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://suno.com/",
+      "checked_at": "2026-11-26T04:17:38.870715+00:00",
+      "status": 200,
+      "final_url": "https://suno.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:39 GMT",
+      "title": "Suno | AI Music Generator",
+      "access": "page-response"
+    },
+    {
+      "url": "https://triton-lang.org/",
+      "checked_at": "2026-11-26T04:17:39.317597+00:00",
+      "status": 200,
+      "final_url": "https://triton-lang.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:41 GMT",
+      "title": "Redirecting to https://triton-lang.org/main/index.html",
+      "access": "page-response"
+    },
+    {
+      "url": "https://tvm.apache.org/",
+      "checked_at": "2026-11-26T04:17:39.442768+00:00",
+      "status": 200,
+      "final_url": "https://tvm.apache.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:41 GMT",
+      "title": "Apache TVM",
+      "access": "page-response"
+    },
+    {
+      "url": "https://v0.dev/",
+      "checked_at": "2026-11-26T04:17:39.995474+00:00",
+      "status": 200,
+      "final_url": "https://v0.app/",
+      "http_date": "Thu, 26 Nov 2026 04:17:41 GMT",
+      "title": "v0 by Vercel - Build Full-Stack Web Apps with AI",
+      "access": "page-response"
+    },
+    {
+      "url": "https://volcano.sh/",
+      "checked_at": "2026-11-26T04:17:40.842656+00:00",
+      "status": 200,
+      "final_url": "https://volcano.sh/",
+      "http_date": "Thu, 26 Nov 2026 04:17:42 GMT",
+      "title": "Volcano",
+      "access": "page-response"
+    },
+    {
+      "url": "https://windsurf.com/",
+      "checked_at": "2026-11-26T04:17:41.711480+00:00",
+      "status": 308,
+      "access": "redirect-not-followed",
+      "error": "HTTP Error 308: Permanent Redirect"
+    },
+    {
+      "url": "https://workspace.google.com/solutions/ai/",
+      "checked_at": "2026-11-26T04:17:41.857011+00:00",
+      "status": 200,
+      "final_url": "https://workspace.google.com/solutions/ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:42 GMT",
+      "title": "AI Tools for Business | Google Workspace",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.adobe.com/products/firefly.html",
+      "checked_at": "2026-11-26T04:17:42.720304+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.ai21.com/",
+      "checked_at": "2026-11-26T04:17:42.850947+00:00",
+      "status": 200,
+      "final_url": "https://www.ai21.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:43 GMT",
+      "title": "Post-training for specialized intelligence | AI21",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.aliyun.com/product/bigdata/learn",
+      "checked_at": "2026-11-26T04:17:42.866205+00:00",
+      "status": 200,
+      "final_url": "https://www.aliyun.com/product/pai",
+      "http_date": "Thu, 26 Nov 2026 04:17:43 GMT",
+      "title": "人工智能平台PAI - 企业级AI开发平台 - 支持Qwen3一键部署 - 阿里云",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.amd.com/en/products/accelerators/instinct.html",
+      "checked_at": "2026-11-26T04:17:43.459652+00:00",
+      "status": 200,
+      "final_url": "https://www.amd.com/en/products/accelerators/instinct.html",
+      "http_date": "Thu, 26 Nov 2026 04:17:45 GMT",
+      "title": "AMD Instinct™ GPUs",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.autodl.com/",
+      "checked_at": "2026-11-26T04:17:43.808181+00:00",
+      "status": 200,
+      "final_url": "https://www.autodl.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:44 GMT",
+      "title": "AutoDL算力云 | 弹性、好用、省钱，GPU算力零售价格新标杆",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.canva.com/ai/",
+      "checked_at": "2026-11-26T04:17:43.940696+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.cerebras.ai/",
+      "checked_at": "2026-11-26T04:17:44.117585+00:00",
+      "status": 200,
+      "final_url": "https://www.cerebras.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:47 GMT",
+      "title": "Cerebras",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.codebuddy.ai/docs/zh/ide/User-guide/Overview",
+      "checked_at": "2026-11-26T04:17:44.162946+00:00",
+      "status": 200,
+      "final_url": "https://www.codebuddy.ai/docs/zh/ide/User-guide/Overview",
+      "http_date": "Thu, 26 Nov 2026 04:17:44 GMT",
+      "title": "概述 | 腾讯云代码助手 CodeBuddy – AI 代码编辑器",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.coreweave.com/",
+      "checked_at": "2026-11-26T04:17:44.207178+00:00",
+      "status": 403,
+      "access": "unavailable",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.deepspeed.ai/",
+      "checked_at": "2026-11-26T04:17:44.859073+00:00",
+      "status": 200,
+      "final_url": "https://www.deepspeed.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:46 GMT",
+      "title": "Latest News - DeepSpeed",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.descript.com/",
+      "checked_at": "2026-11-26T04:17:44.925361+00:00",
+      "status": 200,
+      "final_url": "https://www.descript.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:46 GMT",
+      "title": "Descript: AI Video & Audio Text-based Editor — Try Free",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.glean.com/",
+      "checked_at": "2026-11-26T04:17:46.148599+00:00",
+      "status": 200,
+      "final_url": "https://www.glean.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:47 GMT",
+      "title": "Glean – Enterprise AI that Works | Agents, Assistant & Search",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.gradio.app/docs",
+      "checked_at": "2026-11-26T04:17:46.774332+00:00",
+      "status": 200,
+      "final_url": "https://gradio.app/docs",
+      "http_date": "Thu, 26 Nov 2026 04:17:48 GMT",
+      "title": "Gradio API Documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.granola.ai/",
+      "checked_at": "2026-11-26T04:17:46.941815+00:00",
+      "status": 200,
+      "final_url": "https://www.granola.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:49 GMT",
+      "title": "Granola — The AI Notepad for back-to-back meetings",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.huaweicloud.com/product/modelarts.html",
+      "checked_at": "2026-11-26T04:17:47.885887+00:00",
+      "status": 200,
+      "final_url": "https://www.huaweicloud.com/product/modelarts.html",
+      "http_date": "Thu, 26 Nov 2026 04:17:48 GMT",
+      "title": "AI开发平台_ModelArts_AI智能开放平台_人工智能平台_机器学习-华为云",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.infini-ai.com/",
+      "checked_at": "2026-11-26T04:17:48.691025+00:00",
+      "status": 200,
+      "final_url": "https://www.infinigence-ai.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:50 GMT",
+      "title": "无问芯穹_Infinigence-AI_通用人工智能基础设施服务商",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.make.com/",
+      "checked_at": "2026-11-26T04:17:48.927565+00:00",
+      "status": 200,
+      "final_url": "https://www.make.com/",
+      "http_date": "Thu, 26 Nov 2026 04:17:51 GMT",
+      "title": "AI Workflow Automation Software & Tools | Make",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.microsoft.com/microsoft-365/copilot",
+      "checked_at": "2026-11-26T04:17:49.709742+00:00",
+      "status": 200,
+      "final_url": "https://www.microsoft.com/zh-cn/microsoft-365/copilot",
+      "http_date": "Thu, 26 Nov 2026 04:17:54 GMT",
+      "title": "Your request has been blocked. This could be due to several reasons.",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.midjourney.com/",
+      "checked_at": "2026-11-26T04:17:50.329135+00:00",
+      "status": null,
+      "access": "unavailable",
+      "error": "<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1129)>"
+    },
+    {
+      "url": "https://www.nomic.ai/gpt4all",
+      "checked_at": "2026-11-26T04:17:50.751180+00:00",
+      "status": 200,
+      "final_url": "https://www.nomic.ai/gpt4all",
+      "http_date": "Thu, 26 Nov 2026 04:17:54 GMT",
+      "title": "GPT4All - Private & Local AI Chatbot | Nomic",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.notion.com/product/ai",
+      "checked_at": "2026-11-26T04:17:50.798707+00:00",
+      "status": 200,
+      "final_url": "https://www.notion.com/product/ai",
+      "http_date": "Thu, 26 Nov 2026 04:17:51 GMT",
+      "title": "Meet your AI team | Notion",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.nvidia.com/en-us/ai/",
+      "checked_at": "2026-11-26T04:17:51.097389+00:00",
+      "status": 200,
+      "final_url": "https://www.nvidia.com/en-us/ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:52 GMT",
+      "title": "AI Agents: Built to Reason, Plan, Act | NVIDIA",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/",
+      "checked_at": "2026-11-26T04:17:51.890250+00:00",
+      "status": 200,
+      "final_url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/",
+      "http_date": "Thu, 26 Nov 2026 04:17:53 GMT",
+      "title": "The Engine Behind AI Factories | NVIDIA Blackwell Architecture",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.open3d.org/",
+      "checked_at": "2026-11-26T04:17:53.653027+00:00",
+      "status": 200,
+      "final_url": "https://www.open3d.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:56 GMT",
+      "title": "Open3D – A Modern Library for 3D Data Processing",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.openpolicyagent.org/docs",
+      "checked_at": "2026-11-26T04:17:54.218396+00:00",
+      "status": 200,
+      "final_url": "https://www.openpolicyagent.org/docs",
+      "http_date": "Thu, 26 Nov 2026 04:17:54 GMT",
+      "title": "Open Policy Agent (OPA) | Open Policy Agent",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.perplexity.ai/",
+      "checked_at": "2026-11-26T04:17:55.009025+00:00",
+      "status": 200,
+      "final_url": "https://www.perplexity.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:55 GMT",
+      "title": "Perplexity",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.pymc.io/",
+      "checked_at": "2026-11-26T04:17:55.077635+00:00",
+      "status": 200,
+      "final_url": "https://www.pymc.io/",
+      "http_date": "Thu, 26 Nov 2026 04:17:56 GMT",
+      "title": "Bayesian Modeling and Probabilistic Programming in Python — PyMC",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.rdkit.org/",
+      "checked_at": "2026-11-26T04:17:56.155455+00:00",
+      "status": 200,
+      "final_url": "https://www.rdkit.org/",
+      "http_date": "Thu, 26 Nov 2026 04:17:58 GMT",
+      "title": "RDKit",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.runpod.io/",
+      "checked_at": "2026-11-26T04:17:56.189720+00:00",
+      "status": 200,
+      "final_url": "https://www.runpod.io/",
+      "http_date": "Thu, 26 Nov 2026 04:18:02 GMT",
+      "title": "The AI Developer Cloud | Runpod",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.salesforce.com/agentforce/",
+      "checked_at": "2026-11-26T04:17:56.782405+00:00",
+      "status": 200,
+      "final_url": "https://www.salesforce.com/ap/agentforce/?bc=OTH",
+      "http_date": "Thu, 26 Nov 2026 04:18:00 GMT",
+      "title": "Agentforce: The AI Agent Platform | Salesforce AP",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.servicenow.com/ai.html",
+      "checked_at": "2026-11-26T04:17:58.617866+00:00",
+      "status": null,
+      "access": "unavailable",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://www.together.ai/",
+      "checked_at": "2026-11-26T04:17:59.001016+00:00",
+      "status": 200,
+      "final_url": "https://www.together.ai/",
+      "http_date": "Thu, 26 Nov 2026 04:17:59 GMT",
+      "title": "Together AI | The AI Native Cloud",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.udio.com/",
+      "checked_at": "2026-11-26T04:18:00.012533+00:00",
+      "status": 429,
+      "access": "unavailable",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "url": "https://www.uipath.com/",
+      "checked_at": "2026-11-26T04:18:00.457698+00:00",
+      "status": 200,
+      "final_url": "https://www.uipath.com/",
+      "http_date": "Thu, 26 Nov 2026 04:18:01 GMT",
+      "title": "The UiPath Platform™ for Business Orchestration and Automation | UiPath",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.volcengine.com/product/ark",
+      "checked_at": "2026-11-26T04:18:01.200168+00:00",
+      "status": 200,
+      "final_url": "https://www.volcengine.com/product/ark",
+      "http_date": "Thu, 26 Nov 2026 04:18:01 GMT",
+      "title": null,
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.zendesk.com/ai/",
+      "checked_at": "2026-11-26T04:18:01.447443+00:00",
+      "status": 200,
+      "final_url": "https://www.zendesk.hk/service/ai/",
+      "http_date": "Thu, 26 Nov 2026 04:18:06 GMT",
+      "title": "適用於客戶服務與支援的人工智能 | Zendesk人工智能平台",
+      "access": "page-response"
+    },
+    {
+      "url": "https://www.zoom.com/en/ai/",
+      "checked_at": "2026-11-26T04:18:01.930945+00:00",
+      "status": 200,
+      "final_url": "https://www.zoom.com/error/404/?cms_guid=false",
+      "http_date": "Thu, 26 Nov 2026 04:18:05 GMT",
+      "title": "¯\\_(ツ)_/¯ | Zoom",
+      "access": "page-response"
+    },
+    {
+      "url": "https://xgboost.readthedocs.io/",
+      "checked_at": "2026-11-26T04:18:02.681052+00:00",
+      "status": 200,
+      "final_url": "https://xgboost.readthedocs.io/en/stable/",
+      "http_date": "Thu, 26 Nov 2026 04:18:03 GMT",
+      "title": "XGBoost Documentation — xgboost 3.4.2 documentation",
+      "access": "page-response"
+    },
+    {
+      "url": "https://zapier.com/",
+      "checked_at": "2026-11-26T04:18:03.798890+00:00",
+      "status": 200,
+      "final_url": "https://zapier.com/",
+      "http_date": "Thu, 26 Nov 2026 04:13:53 GMT",
+      "title": "Zapier: Automate AI Workflows, Agents, and Apps",
+      "access": "page-response"
+    }
+  ]
+}
