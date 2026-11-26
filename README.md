@@ -80,7 +80,7 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 1 | 模型对齐（Alignment）——从基础模型到对话助手 | 基础/指令/对齐模型三个概念、能力与对齐、HHH、InstructGPT 三步 |
 | 2 | 三种学习范式（Learning Paradigms）——监督学习、无监督学习与自监督学习 | 标签来源、三种范式的训练流程与联系、自监督为何能规模化、模型自举 |
 | 3 | 数据工程——语料来源、清洗与配比 | Common Crawl→C4、清洗四关、去重、个人身份信息（PII）脱敏、质量筛选 |
-| 4 | 监督微调（SFT）——指令跟随能力的训练 | 对话模板（Chat Template）、损失掩码（Loss Mask）、低秩适配/量化低秩适配（LoRA/QLoRA）微调、对数几率蒸馏（KL 散度） |
+| 4 | 监督微调（SFT）——指令跟随能力的训练 | 对话模板（Chat Template）、损失掩码（Loss Mask）、低秩适配/量化低秩适配（LoRA/QLoRA）微调、Logits 蒸馏（KL 散度） |
 | 5 | 偏好学习（Preference Learning）——人类偏好的建模与优化 | 奖励模型（Reward Model）、基于人类反馈的强化学习与近端策略优化（RLHF/PPO）、直接偏好优化（DPO）、ORPO/SimPO/GRPO |
 | 6 | 推理对齐（Reasoning Alignment）——推理能力的训练与对齐 | 过程监督/结果监督（Process/Outcome Supervision）、组相对策略优化（GRPO）、测试时扩展（test-time scaling） |
 | 7 | 智能体强化学习（Agentic RL）——在环境中训练会使用工具的智能体 | 环境与轨迹、结果/过程奖励、轨迹级信用分配、rollout 与训练解耦；7.1 最小多轮工具调用强化学习循环 |
