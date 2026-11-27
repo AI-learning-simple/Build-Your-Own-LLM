@@ -2,7 +2,7 @@
 
 > **从零实践大模型，一行代码一行代码地理解 LLM、Alignment 与 Agent 的完整技术栈。**
 
-本书的目标是**普惠**：不需要昂贵的硬件，不需要任何境外付费服务，任何人都应该能跟着书里的代码把每一个实验亲手跑一遍。
+本书的目标是**普惠**：优先用普通电脑和本地开放权重模型讲清核心原理，不以境外付费 API 作为学习前提。基础实验提供低门槛路径；依赖 CUDA、特定仿真器或真实硬件的扩展实验会单独说明条件，不承诺所有实验都能在同一台 CPU 笔记本上运行。
 
 ---
 
@@ -15,7 +15,7 @@ flowchart LR
 
 阅读约定：**正章负责概念、原理与边界，编号子章（如 3.1、4.2）只负责实践**。子章会直接引用正章，不重复讲解理论；需要补背景时，先回到对应正章。
 
-每一章都遵循"讲清楚概念 → 给你一段可以独立复制运行的代码 → 亲手跑出结果 → 提出思考题"的节奏。所有实验代码都可以**复制到一个 `.py` 文件中直接运行**，不需要跳转到其他文件找依赖。
+学习路线遵循“讲清楚概念 → 实现最小实验 → 观察结果与失败边界 → 提出思考题”。实践子章列出依赖和运行前提；单文件实验按顺序合并代码，多进程服务按标明的文件名与启动顺序运行，不把 Shell 命令、示意输出和互斥后端代码一起粘进 `.py`。**实测结果、预期现象与未实测参考示例分别标注**；随机训练的曲线不是效果保证，代码能启动也不等于通过质量、性能或安全验收。
 
 ---
 
@@ -25,9 +25,10 @@ flowchart LR
 |---|---|
 | **第一部分第 1～12 章** | 以 NumPy 和小型 PyTorch 模型为主，普通 CPU 笔记本可运行；具体耗时取决于硬件与实验配置 |
 | **第一部分第 13 章及后续训练实验** | 部分实验需要下载 0.5B～7B 开源模型，并可能依赖 CUDA GPU；以各章环境说明为准 |
-| **第二、三部分** | 部分训练实验建议使用消费级 GPU；CPU 能否运行及耗时以各章说明为准 |
-| **模型来源** | 全部使用开源模型（Qwen 系列），在本地运行，不需要注册任何境外付费 API |
-| **国内网络** | 提供 Hugging Face 镜像（`hf-mirror.com`）和 ModelScope 备选方案；pip 清华源加速；推荐按小时计费的国内云 GPU（AutoDL 等），支持支付宝/微信，几元钱即可体验完一节实验 |
+| **第二、三部分** | 训练、Triton、FlashAttention、vLLM 等路径有各自的 CUDA 与显存条件；本地小模型、确定性工具测试和 CPU 路径以各章说明为准 |
+| **第四部分** | NumPy 几何与算法实验作为 CPU 基础路线；PyTorch/Gymnasium、VLM、Isaac Lab 和 LeRobot 扩展另列依赖、设备与验证状态。真机部署不是完成基础学习的前提 |
+| **模型来源** | 主要使用 Qwen 系列及其他可本地获取的开放权重模型；安全护栏等实验也使用 Llama Guard。权重许可、访问申请与本机认证以模型卡为准，免费获取不等于无许可限制 |
+| **国内网络** | 提供 Hugging Face 镜像（`hf-mirror.com`）和 ModelScope 备选方案；镜像不能替代授权或完整性核验。可按需选择国内云 GPU，费用取决于显卡、下载、训练时长与平台计费，运行前设置预算 |
 
 > 详见 `0. 开始之前/1. 前言.md` 中的「P0.3 硬件准备」「P0.4 环境安装」与「P0.5 模型与网络」。
 
@@ -96,31 +97,30 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 
 ### 3. 智能体（Agent）与运行平台
 
-> 让大语言模型（LLM）从"会说"变成"会做"：工具调用（Tool Calling）、检索增强生成（RAG）、规划（Planning）、记忆（Memory）、反思（Reflection）等必需组件，再到循环（Loop）与图（Graph）两种可选编排、多智能体（Multi-Agent）、协议家族（MCP / A2A / AG-UI）、技能（Skill）、运行时（Runtime）与智能体操作系统（Agentic OS），最后以一个综合实践收尾。
+> 让大语言模型（LLM）从“会说”变成“会做”：理解工具调用（Tool Calling）、检索增强生成（RAG）、规划（Planning）、记忆（Memory）、反思（Reflection）等可组合能力，再比较固定工作流、自主循环（Loop）与状态图（State Graph），逐步进入多智能体（Multi-Agent）、协议家族（MCP / A2A / AG-UI）、技能（Skill）与运行时。Agentic OS 作为前瞻架构讨论；综合实践交付可本地运行的词面检索 RAG 服务基线，不把它等同于已实现自主工具调用的完整 Agent。
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
-| 1 | 智能体（Agent）——定义、组成与执行循环 | LLM 与 Agent 的区别、六个必需组件、记忆层与控制流层的边界、最小工作流（Workflow）实现 |
+| 1 | 智能体（Agent）——定义、组成与执行循环 | LLM、工作流与自主 Agent 的区别、工具型 Agent 的参考分层、状态与控制流的边界、最小工作流（Workflow）实现 |
 | 2 | 工具调用（Tool Calling）——智能体连接真实世界的方式 | 手写 JSON 解析 → 模型原生工具调用 → 约束解码（Constrained Decoding）能保证与不能保证的边界 |
 | 3 | 规划（Planning）——智能体的任务分解与行动计划 | 任务分解、Plan-and-Execute、ReWOO、Tree of Thoughts、规划与反思的边界、LangGraph 复现 |
 | 4 | 智能体记忆（Agent Memory）与检索增强生成（RAG）——状态保存与知识检索 | 记忆的写入/更新/遗忘策略、RAG 完整流程（分块/向量化/检索/重排/增强）、记忆与 RAG 的区别 |
 | 5 | 反思机制（Reflection）——智能体的自我评估与修正 | Self-Refine、Reflexion、Evaluator-Optimizer 的差异、自我确认偏差与过度修正 |
-| 6 | 智能体循环工程（Agent Loop Engineering）——自主执行闭环的设计与边界 | ReAct 推理轨迹回填、终止条件、错误重试、上下文管理、副作用工具的幂等性 |
-| 7 | 图工程（Graph Engineering）——复杂智能体流程的编排范式（**可选**） | 状态图、Checkpoint / Resume、Durable Execution 的边界、何时不该上图 |
-| 8 | 多智能体（Multi-Agent）——协作模式与工程边界 | 流水线、主从、层级、黑板、对等协作与竞争评审、上下文传递与冲突处理、CrewAI 实战 |
-| 9 | 智能体协议家族（Agent Protocol Family）——MCP、A2A 与 AG-UI 的连接对象 | MCP（连工具/资源/提示）、A2A（连 Agent）、AG-UI（连前端）三方协议对比与协作 |
-| 10 | 技能（Skill）——智能体能力的封装、加载与复用 | SKILL.md、Progressive Disclosure、Skill 与 Tool/MCP 的层次关系、误触发与加载预算 |
-| 11 | 智能体运行时（Agent Runtime）——执行架构与服务化运行 | 常驻服务、会话管理、可观测性（Observability / Trace / Span）、流式输出、评测 |
-| 12 | 执行环境（Execution Environment）——智能体如何操作数字世界 | 多层沙箱、浏览器自动化风险、提示注入（Prompt Injection）的纵深防御 |
-| 13 | 智能体运行平台（Agentic Runtime）——面向智能体集群的运行平台架构 | 调度、配额、抢占与公平性、共享状态一致性、Capability Registry |
-| 14 | 智能体操作系统（Agentic OS）——面向智能体的操作系统架构设想 | Capability First、Event First、OS 类比的成立与失效、未解问题 |
-| 15 | 综合实践——文档问答智能体（Agent）的端到端构建 | RAG + LLM + FastAPI 三层架构、失败模式与改进方向、第三部分术语对照表 |
+| 6 | 智能体循环工程（Agent Loop Engineering）——自主执行闭环的设计与边界 | ReAct 推理轨迹回填、终止条件、错误重试、上下文管理、副作用工具的幂等性；可选的状态图编排、Checkpoint / Resume 与持久化执行的边界、何时不该上图 |
+| 7 | 多智能体（Multi-Agent）——协作模式与工程边界 | 流水线、主从、层级、黑板、对等协作与竞争评审、上下文传递与冲突处理、CrewAI 实战 |
+| 8 | 智能体协议家族（Agent Protocol Family）——MCP、A2A 与 AG-UI 的连接对象 | MCP（连工具/资源/提示）、A2A（连 Agent）、AG-UI（连前端）三方协议对比与协作 |
+| 9 | 技能（Skill）——智能体能力的封装、加载与复用 | SKILL.md、Progressive Disclosure、Skill 与 Tool/MCP 的层次关系、误触发与加载预算 |
+| 10 | 智能体运行时（Agent Runtime）——执行架构与服务化运行 | 常驻服务、会话管理、可观测性（Observability / Trace / Span）、流式输出、评测 |
+| 11 | 执行环境（Execution Environment）——智能体如何操作数字世界 | 多层沙箱、浏览器自动化风险、提示注入（Prompt Injection）的纵深防御 |
+| 12 | 智能体运行平台（Agentic Runtime）——面向智能体集群的运行平台架构 | 调度、配额、抢占与公平性、共享状态一致性、Capability Registry |
+| 13 | 智能体操作系统（Agentic OS）——面向智能体的操作系统架构设想 | Capability First、Event First、OS 类比的成立与失效、未解问题 |
+| 14 | 综合实践——文档问答服务基线与 Agent 扩展 | 字符 n-gram 词面检索 + 本地 LLM + FastAPI、拒答与引用边界、Agent 扩展路径、第三部分术语对照表 |
 
 ---
 
 ### 4. 具身智能
 
-> 从"理解语言""自主行动"，走向"拥有身体"：把 LLM、Agent 的方法论重新应用到物理世界，覆盖运动学、强化学习、模仿学习、感知、现代策略架构（ACT/Diffusion Policy）、VLA、World Model、仿真与数据、Sim2Real、长时程规划的完整链路。全部实验只需 Python/NumPy，一台普通笔记本 CPU 即可运行，无需任何机器人硬件。
+> 从“理解语言”“自主行动”，走向“拥有身体”：覆盖运动学、强化学习、模仿学习、感知、ACT/Diffusion Policy、VLA、World Model、仿真与数据、Sim2Real、长时程规划及执行接口。几何、表格学习和最小控制实验提供普通笔记本 CPU 路线；PyTorch/Gymnasium、VLM、Isaac Lab、LeRobot 等扩展按章说明依赖和设备要求。无需购买机器人也能完成基础学习；仿真、参考代码和真实部署验收不能混为一谈。
 
 | 章 | 标题 | 核心知识点 |
 |---|---|---|
@@ -129,14 +129,14 @@ AI 知识地图、全书学习路线、环境准备（国内网络与硬件门�
 | 3 | 强化学习基础 | MDP、价值函数、贝尔曼方程、Q-Learning |
 | 4 | 模仿学习 | 行为克隆、分布偏移、DAgger |
 | 5 | 机器人感知 | 针孔相机模型、点云反投影、视觉表征 |
-| 6 | 现代模仿学习策略 | Action Chunking、ACT(CVAE)、Diffusion Policy |
-| 7 | VLA | RT-1/RT-2/OpenVLA/π0、快慢双系统 |
-| 8 | 强化学习进阶 | 奖励塑形、奖励黑客、HIL-SERL |
-| 9 | World Model | Model-Based RL、隐空间动态模型、MPC |
-| 10 | 仿真器与数据集 | PyBullet/MuJoCo/Isaac Lab/Genesis 四款仿真器均配套动手实验、LeRobotDataset |
-| 11 | Sim-to-Real | Reality Gap、域随机化、系统辨识 |
-| 12 | 长时程任务与分层智能体 | 三条架构路线（分层式/端到端/混合式）、LLM Planner + Skill Library |
-| 13 | 机器人数据工程与数据飞轮 | 数据飞轮（DAgger 的工程化延续） |
+| 6 | 现代模仿学习策略 | 动作块预测与执行、ACT 的 CVAE 目标、Diffusion Policy、Flow Matching |
+| 7 | VLA | RT-1/RT-2/OpenVLA/π0 的基础脉络，FAST、OFT、实时动作分块与后训练，具身记忆等研究进展的证据边界 |
+| 8 | 强化学习进阶 | 势函数塑形、PPO 的适用边界与公平对照、HIL-SERL 的异策略数据流、安全执行接口 |
+| 9 | World Model | Model-Based RL、部分可观测状态、想象训练与环境数据、MPC |
+| 10 | 仿真器与数据集 | PyBullet/MuJoCo/Genesis 基础示例、Isaac Lab GPU 选修参考、RLDS 与 LeRobotDataset、轨迹回放与策略推理 |
+| 11 | Sim-to-Real | Reality Gap、稳定域与域随机化的区别、视觉伪相关、系统辨识 |
+| 12 | 长时程任务与分层智能体 | 联合训练与时间层次两个维度、LLM Planner + Skill Library、技能契约与最终目标验收 |
+| 13 | 机器人数据工程与数据飞轮 | 纠正数据回流、时序与动作语义契约、按轨迹/场景隔离评测、封存验收集 |
 | 14 | 具身智能的算力与硬件 | LeRobot 开源硬件、云 GPU 租用 |
 | 15 | 第四部分总结 | 完整技术栈与未来展望 |
 
